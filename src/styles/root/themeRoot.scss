@@ -1,0 +1,131 @@
+// $colorfunction: (
+//   red: (
+//     800: #d70c20,
+//   ),
+//   blue: (
+//     800: #1a3e7d,
+//   ),
+// );
+
+// $bgfunction: (
+//   red: (
+//     800: #d70c20,
+//   ),
+//   blue: (
+//     800: #1a3e7d,
+//     950: hsl(218.18deg 86.67% 6.66% / 69%),
+//   ),
+//   light: (
+//     100: #f8f8f8,
+//   ),
+// );
+
+// $hoverfunction: (
+//   red: (
+//     800: #d70c20,
+//   ),
+//   blue: (
+//     800: #1a3e7d,
+//   ),
+// );
+
+// :root {
+//   //Root Color Variables
+//   @each $themefunction, $themeroot in $colorfunction {
+//     @each $key, $value in $themeroot {
+//       $keyname: "--wz-" + $themefunction + "-" + $key;
+//       #{$keyname}: #{$value};
+//     }
+//   }
+
+//   //Root Bg Variables
+//   @each $themefunction, $themeroot in $bgfunction {
+//     @each $key, $value in $themeroot {
+//       $keyname: "--wz-" + $themefunction + "-" + $key;
+//       #{$keyname}: #{$value};
+//     }
+//   }
+
+//   //Root Bg Hover Variables
+//   @each $themefunction, $themeroot in $hoverfunction {
+//     @each $key, $value in $themeroot {
+//       $keyname: "--wz-" + $themefunction + "-" + $key;
+//       #{$keyname}: #{$value};
+//     }
+//   }
+
+// }
+// //Color Variables
+// @each $themefunction, $themeroot in $colorfunction {
+//   @each $key, $value in $themeroot {
+//     .wz-color-#{"" + $themefunction}-#{"" + $key} {
+//       color: var(--wz-#{"" + $themefunction}-#{"" + $key});
+//     }
+//   }
+// }
+
+// //Bg Color Variables
+// @each $themefunction, $themeroot in $bgfunction {
+//     @each $key, $value in $themeroot {
+//       .wz-bg-#{"" + $themefunction}-#{"" + $key} {
+//         background-color: var(--wz-#{"" + $themefunction}-#{"" + $key});
+//       }
+//     }
+//   }
+
+//   //Bg Hover Variables
+// @each $themefunction, $themeroot in $hoverfunction {
+//   @each $key, $value in $themeroot {
+//     .hover\:wz-bg-#{#{$themefunction}}-#{#{$key}}:hover {
+//       background-color: var(--wz-#{#{$themefunction}}-#{#{$key}});
+//     }
+//   }
+// }
+//   //Bg Hover Variables
+// @each $themefunction, $themeroot in $hoverfunction {
+//   @each $key, $value in $themeroot {
+//     .hover\:wz-color-#{#{$themefunction}}-#{#{$key}}:hover {
+//       color: var(--wz-#{#{$themefunction}}-#{#{$key}});
+//     }
+//   }
+// }
+
+// // .wz-color-red-800 {
+// //   color: var(--wz-red-800);
+// // }
+
+// // .wz-color-blue-800 {
+// //   color: var(--wz-blue-800);
+// // }
+
+// // .wz-bg-red-800 {
+// //   background-color: var(--wz-red-800);
+// // }
+
+// // .wz-bg-blue-800 {
+// //   background-color: var(--wz-blue-800);
+// // }
+
+// // .wz-bg-blue-950 {
+// //   background-color: var(--wz-blue-950);
+// // }
+
+// // .wz-bg-light-100 {
+// //   background-color: var(--wz-light-100);
+// // }
+
+// // .hover\:wz-bg-red-800:hover {
+// //   background-color: var(--wz-red-800);
+// // }
+
+// // .hover\:wz-bg-blue-800:hover {
+// //   background-color: var(--wz-blue-800);
+// // }
+
+// // .hover\:wz-color-red-800:hover {
+// //   color: var(--wz-red-800);
+// // }
+
+// // .hover\:wz-color-blue-800:hover {
+// //   color: var(--wz-blue-800);
+// // }
