@@ -86,11 +86,12 @@ export default function Home() {
                   </span>
                 </h2>
                 <div className="mt-4">
-                  <Button><a href="https://mail.google.com/mail/?view=cm&fs=1&to=nikhilmohan@gmail.com"
+
+                    <Button href="https://mail.google.com/mail/?view=cm&fs=1&to=nikhilmohan@gmail.com"
                     target="_blank"
                     rel="noopener noreferrer">
                                   Get in Touch
-                                  </a></Button>
+                    </Button>
                 </div>
               </div>
             </div>
@@ -100,3 +101,114 @@ export default function Home() {
     </>
   );
 }
+
+// "use client";
+
+
+// import Head from "next/head";
+// import Image from "next/image";
+// import Button from "@/components/Button";
+// import Intro from "@/components/intro";
+// import Services from "@/components/services";
+// import WorksShowcase from "@/components/WorksShowcase";
+// import Footer from "@/components/footer";
+
+// import homeImg from "../../public/images/home-banner.jpg";
+// import manImg from "../../public/images/Ethan-Hunt.png";
+// import bikeImg from "../../public/images/Bike.png";
+// import contactImg from "../../public/images/contact-img.jpg";
+
+// import ParallaxSection from "@/components/ParallaxSection";
+// import ParallaxImage from "@/components/ParallaxImage";
+
+// export default function Home() {
+//   return (
+//     <>
+//       <Head>
+//         <title>Portfolio by Nikhil Mohan</title>
+//         <meta name="description" content="Nikhil Mohan Portfolio" />
+//         <meta name="viewport" content="width=device-width, initial-scale=1" />
+//         <link rel="icon" href="/favicon.svg" />
+//       </Head>
+
+//       {/* HERO SECTION (with parallax BG) */}
+//       <section className="min-h-screen overflow-hidden relative">
+
+//         <div className="h-[700px]">
+//           <ParallaxImage src={homeImg} alt="banner" speed={0.3} />
+//         </div>
+
+//         <div className="absolute top-0 w-full h-full">
+//           <div className="max-w-6xl mx-auto h-full flex justify-center items-center px-6 py-16">
+//             <div className="text-center space-y-10">
+              
+//               <div className="animate-bounce w-[225px] mx-auto">
+//                 <Image src={manImg} alt="" />
+//               </div>
+
+//               <h1 className="font-zuume text-white text-[24px] sm:text-[44px] md:text-[64px] leading-tight">
+//                 “When clean design feels incomplete,
+//                 <span className="block text-red-600">that's when I drop in"</span>
+//               </h1>
+
+//               <div className="animate-bounce w-[225px] mx-auto">
+//                 <Image src={bikeImg} alt="" />
+//               </div>
+
+//             </div>
+//           </div>
+//         </div>
+//       </section>
+
+//       {/* INTRO */}
+//       <ParallaxSection className="min-h-screen flex items-center">
+//         <Intro />
+//       </ParallaxSection>
+
+//       {/* MY WORK */}
+//       <ParallaxSection className="py-20 bg-white">
+//         <div className="max-w-6xl mx-auto px-8">
+//           <div className="flex flex-col items-center gap-2 mb-20">
+//             <h2 className="text-h4 font-bold text-center">Some stories from my work</h2>
+//             <p className="text-bodymedium">
+//               Here are a few projects where I helped teams turn ideas into digital experiences.
+//             </p>
+//           </div>
+//           <WorksShowcase />
+//         </div>
+//       </ParallaxSection>
+
+//       {/* SERVICES */}
+//       <ParallaxSection className="min-h-screen flex items-center">
+//         <Services />
+//       </ParallaxSection>
+
+//       {/* CONTACT */}
+//       <ParallaxSection className="relative min-h-screen">
+//         <ParallaxImage src={contactImg} alt="contact" speed={0.25} />
+
+//         <div className="absolute top-0 lg:top-[170px] w-full">
+//           <div className="max-w-6xl mx-auto px-4 text-center">
+//             <h2 className="font-zuume text-[24px] sm:text-[44px] md:text-[43px] lg:text-[64px] leading-tight">
+//               Ideas don’t wait. Neither do I.
+//               <span className="block text-red-600">
+//                 Let’s run towards something great together.
+//               </span>
+//             </h2>
+
+//             <div className="mt-4">
+//               <Button>
+//                 <a href="mailto:nikhilmohan@gmail.com" target="_blank">Get in Touch</a>
+//               </Button>
+//             </div>
+//           </div>
+//         </div>
+//       </ParallaxSection>
+
+//       {/* FOOTER */}
+//       <ParallaxSection className="py-10">
+//         <Footer />
+//       </ParallaxSection>
+//     </>
+//   );
+// }

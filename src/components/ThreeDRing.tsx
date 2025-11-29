@@ -15,17 +15,44 @@ const ThreeDRing = () => {
 
     // --- GSAP setup ---
     gsap.set(ring, { rotationY: 180, cursor: "grab" });
-    images.forEach((img, i) => {
-      gsap.set(img, {
-        rotateY: i * -36,
-        transformOrigin: "50% 50% 500px",
-        z: -500,
-        backgroundImage: `url(https://picsum.photos/id/${i + 32}/600/400/)`,
-        backgroundPosition: "0px 0px",
-        backfaceVisibility: "hidden",
-        backgroundSize: "cover",
-      });
-    });
+    // images.forEach((img, i) => {
+    //   gsap.set(img, {
+    //     rotateY: i * -36,
+    //     transformOrigin: "50% 50% 500px",
+    //     z: -500,
+    //     backgroundImage: `url(https://picsum.photos/id/${i + 32}/600/400/)`,
+    //     backgroundPosition: "0px 0px",
+    //     backfaceVisibility: "hidden",
+    //     backgroundSize: "cover",
+    //   });
+    // });
+
+    const imageList = [
+  "/images/Gallery-1.png",
+  "/images/Gallery-2.png",
+  "/images/Gallery-3.png",
+  "/images/Gallery-4.png",
+  "/images/Gallery-5.png",
+  "/images/Gallery-6.png",
+  "/images/Gallery-7.png",
+  "/images/Gallery-8.png",
+  "/images/Gallery-9.png",
+  "/images/Gallery-10.png",
+];
+
+images.forEach((img, i) => {
+  gsap.set(img, {
+    rotateY: i * -36,
+    transformOrigin: "50% 50% 500px",
+    z: -500,
+    backgroundImage: `url(${imageList[i]})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backfaceVisibility: "hidden",
+    backgroundRepeat: "no-repeat",
+  });
+});
+
 
     gsap.from(images, {
       duration: 1.5,
@@ -58,16 +85,22 @@ const ThreeDRing = () => {
 
     const drag = (e: MouseEvent | TouchEvent) => {
       const clientX = "touches" in e ? e.touches[0].clientX : e.clientX;
+      // gsap.to(ring, {
+      //   rotationY: `-=${(clientX - xPos.current) % 360}`,
+      //   onUpdate: () => {
+      //     const rotationY = gsap.getProperty(ring, "rotationY") as number;
+      //     images.forEach((img, i) => {
+      //       img.style.backgroundPosition = `${100 - ((rotationY - 180 - i * 36) % 360) / 360 * 500
+      //         }px 0px`;
+      //     });
+      //   },
+      // });
+
       gsap.to(ring, {
-        rotationY: `-=${(clientX - xPos.current) % 360}`,
-        onUpdate: () => {
-          const rotationY = gsap.getProperty(ring, "rotationY") as number;
-          images.forEach((img, i) => {
-            img.style.backgroundPosition = `${100 - ((rotationY - 180 - i * 36) % 360) / 360 * 500
-              }px 0px`;
-          });
-        },
-      });
+    rotationY: `-=${(clientX - xPos.current) % 360}`,
+    ease: "none"
+  });
+
       xPos.current = clientX;
     };
 

@@ -571,9 +571,10 @@ export default function VolunteerApp() {
               Crafting Ospyn’s First Design System
             </p>
 
-            <Link href="/case-study-1">
+            {/* <Link href="/case-study-1">
               <Button>View Case Study</Button>
-            </Link>
+            </Link> */}
+            <Button href="/case-study-1">View Case Study</Button>
           </div>
 
           <div className="border border-gray-200 rounded-2xl p-4 shadow-sm hover:shadow-md transition">
@@ -589,9 +590,10 @@ export default function VolunteerApp() {
               Learning from Learners: A UX Story
             </p>
 
-            <Link href="/case-study-3">
+            {/* <Link href="/case-study-3">
               <Button>View Case Study</Button>
-            </Link>
+            </Link> */}
+            <Button href="/case-study-3">View Case Study</Button>
           </div>
 
           <div className="border border-gray-200 rounded-2xl p-4 shadow-sm hover:shadow-md transition">
@@ -607,9 +609,10 @@ export default function VolunteerApp() {
               A UX Journey in the Banking Sector
             </p>
 
-            <Link href="/case-study-4">
+            {/* <Link href="/case-study-4">
               <Button>View Case Study</Button>
-            </Link>
+            </Link> */}
+            <Button href="/case-study-4">View Case Study</Button>
           </div>
         </div>
       </section>

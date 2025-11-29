@@ -7,7 +7,7 @@ import Link from "next/link";
 const projects = [
   {
     chips: ["DESIGN SYSTEM", "DEV HANDOFF"],
-    title: "Designing Consistency: Building a Scalable Design System for a Trade Finance Suite",
+    title: "Designing Consistency: Crafting Ospyn’s First Design System",
     img: "/images/Design-System-Thumbnail.jpg",
     slug: "/case-study-1",
   },
@@ -135,9 +135,13 @@ function WorkItem({ project }: { project: Project }) {
         </div>
         <div className="flex gap-3 flex-col">
           <h3 className="font-semibold text-h6">{project.title}</h3>
-          <Link href={project.slug}>
+          {/* <Link href={project.slug}>
             <Button>View Case Study</Button>
-          </Link>
+          </Link> */}
+          <div>
+            <Button href={project.slug}>View Case Study</Button>
+          </div>
+          
         </div>
         
         

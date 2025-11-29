@@ -126,11 +126,14 @@ export default function OpenToWork() {
                 "I can be your designer - transforming ideas into intuitive, high-impact user experiences through research-driven design."
               </p>
 
-              <Button><a href="https://mail.google.com/mail/?view=cm&fs=1&to=nikhilmohan@gmail.com"
+              
+                <Button href="https://mail.google.com/mail/?view=cm&fs=1&to=nikhilmohan@gmail.com"
   target="_blank"
   rel="noopener noreferrer">
+                
                 Connect me via Mail!
-                </a></Button>
+                </Button>
+            
 
               <div className="mt-2 text-bodysmall text-gray-500">
                 or connect via

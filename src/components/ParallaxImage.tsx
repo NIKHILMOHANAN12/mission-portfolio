@@ -1,45 +1,43 @@
 "use client";
-import React, { useState } from "react";
-import Image, { StaticImageData } from "next/image";
 
-interface ParallaxImageProps {
-  src: string | StaticImageData;
+import Image, { StaticImageData } from "next/image";
+import { useEffect, useRef } from "react";
+
+interface Props {
+  src: StaticImageData;
   alt: string;
-  strength?: number; // how much the image should move
+  speed?: number;
 }
 
-const ParallaxImage: React.FC<ParallaxImageProps> = ({ src, alt, strength = 20 }) => {
-  const [transform, setTransform] = useState("translate(0px, 0px)");
+export default function ParallaxImage({ src, alt, speed = 0.3 }: Props) {
+  const ref = useRef<HTMLDivElement>(null);
 
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    const { left, top, width, height } = e.currentTarget.getBoundingClientRect();
-    const x = ((e.clientX - left) / width - 0.5) * strength;
-    const y = ((e.clientY - top) / height - 0.5) * strength;
-    setTransform(`translate(${x}px, ${y}px)`);
-  };
+  useEffect(() => {
+    async function loadGsap() {
+      const gsap = (await import("gsap")).default;
+      const ScrollTrigger =
+        (await import("gsap/ScrollTrigger")).ScrollTrigger;
 
-  const handleMouseLeave = () => {
-    setTransform("translate(0px, 0px)");
-  };
+      gsap.registerPlugin(ScrollTrigger);
+
+      if (ref.current) {
+        gsap.to(ref.current, {
+          yPercent: speed * -50,
+          ease: "none",
+          scrollTrigger: {
+            trigger: ref.current,
+            scrub: true,
+          },
+        });
+      }
+    }
+
+    loadGsap();
+  }, [speed]);
 
   return (
-    <div
-      className="inline-block"
-      onMouseMove={handleMouseMove}
-      onMouseLeave={handleMouseLeave}
-    >
-      <Image
-        src={src}
-        alt={alt}
-        width={300}
-        height={300}
-        style={{
-          transform,
-          transition: "transform 0.2s ease-out",
-        }}
-      />
+    <div ref={ref} className="w-full h-full overflow-hidden">
+      <Image src={src} alt={alt} className="w-full h-full object-cover" />
     </div>
   );
-};
-
-export default ParallaxImage;
+}

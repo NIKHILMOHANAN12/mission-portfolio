@@ -468,9 +468,10 @@ export default function TradeFinance() {
               Rise of a Volunteer Management App
             </p>
 
-            <Link href="/case-study-2">
+            {/* <Link href="/case-study-2">
               <Button>View Case Study</Button>
-            </Link>
+            </Link> */}
+            <Button href="/case-study-2">View Case Study</Button>
           </div>
 
           <div className="border border-gray-200 rounded-2xl p-4 shadow-sm hover:shadow-md transition">
@@ -486,9 +487,10 @@ export default function TradeFinance() {
               Crafting Ospyn’s First Design System
             </p>
 
-            <Link href="/case-study-1">
+            {/* <Link href="/case-study-1">
               <Button>View Case Study</Button>
-            </Link>
+            </Link> */}
+            <Button href="/case-study-1">View Case Study</Button>
           </div>
 
           <div className="border border-gray-200 rounded-2xl p-4 shadow-sm hover:shadow-md transition">
@@ -504,9 +506,10 @@ export default function TradeFinance() {
               Learning from Learners: A UX Story
             </p>
 
-            <Link href="/case-study-3">
+            {/* <Link href="/case-study-3">
               <Button>View Case Study</Button>
-            </Link>
+            </Link> */}
+            <Button href="/case-study-3">View Case Study</Button>
           </div>
         </div>
       </section>

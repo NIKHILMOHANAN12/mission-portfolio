@@ -290,11 +290,11 @@ export default function About() {
             <p className="mb-2 text-bodysmall">
               Let's connect and make something impactful together
             </p>
-            <Button><a href="https://mail.google.com/mail/?view=cm&fs=1&to=nikhilmohan@gmail.com"
+            <Button href="https://mail.google.com/mail/?view=cm&fs=1&to=nikhilmohan@gmail.com"
                                 target="_blank"
                                 rel="noopener noreferrer">
                                               Get in Touch
-                                              </a></Button>
+                                              </Button>
           </div>
         </section>
       </main>

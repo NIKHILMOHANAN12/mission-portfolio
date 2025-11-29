@@ -413,9 +413,10 @@ export default function LearningFromLearners() {
               Rise of a Volunteer Management App
             </p>
 
-            <Link href="/case-study-2">
+            {/* <Link href="/case-study-2">
               <Button>View Case Study</Button>
-            </Link>
+            </Link> */}
+            <Button href="/case-study-2">View Case Study</Button>
             
           </div>
 
@@ -432,9 +433,10 @@ export default function LearningFromLearners() {
               Crafting Ospyn’s First Design System
             </p>
             
-            <Link href="/case-study-1">
+            {/* <Link href="/case-study-1">
               <Button>View Case Study</Button>
-            </Link>
+            </Link> */}
+            <Button href="/case-study-1">View Case Study</Button>
           </div>
 
           <div className="border border-gray-200 rounded-2xl p-4 shadow-sm hover:shadow-md transition">
@@ -450,9 +452,10 @@ export default function LearningFromLearners() {
               A UX Journey in the Banking Sector
             </p>
 
-            <Link href="/case-study-4">
+            {/* <Link href="/case-study-4">
               <Button>View Case Study</Button>
-            </Link>
+            </Link> */}
+            <Button href="/case-study-4">View Case Study</Button>
           </div>
 
         </div>
