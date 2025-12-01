@@ -1,7 +1,7 @@
 import Button from "@/components/Button";
 import Footer from "@/components/footer";
+import Reveal from "@/components/Reveal";
 import ThreeDRing from "@/components/ThreeDRing";
-import GsapRing from "@/components/ThreeDRing";
 import ToolsSection from "@/components/Toolstack";
 import ToolStack from "@/components/Toolstack";
 import { MagicWandIcon } from "@phosphor-icons/react";
@@ -10,7 +10,7 @@ import Image from "next/image";
 export default function About() {
   return (
     <div>
-      <main>
+      <main className="bg-[#0E100F]">
         <section
           data-theme="dark"
           className="relative flex flex-col items-center justify-center min-h-screen px-6 md:px-12 lg:px-24"
@@ -29,8 +29,9 @@ export default function About() {
           
         </section>
 
-        <section data-theme="dark"
-          className="bg-[#0E100F] text-white py-16 px-[96px] items-center"
+        <Reveal>
+          <section data-theme="dark"
+          className="bg-[#0E100F] text-white pb-16 pt-20 px-[96px] items-center"
         >
           <div className="max-w-6xl mx-auto ">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -100,10 +101,13 @@ export default function About() {
               </div>
             </div>
           </div>
-        </section>
+          </section>
+        </Reveal>
+        
 
         {/* Work Timeline */}
-        <section
+        <Reveal>
+          <section
           data-theme="dark"
           className="bg-[#0E100F] text-white py-16 px-[96px] mx-auto"
         >
@@ -238,30 +242,14 @@ export default function About() {
             </div>
           </div>
         </section>
-
-        <ToolsSection />
-
-        {/* Personal Life */}
-        {/* <section
-          data-theme="dark"
-          className="bg-[#0E100F] text-white py-16 px-6 min-h-screen mx-auto text-center"
-        >
-          <h2 className="text-h4 font-bold text-center ">
-            When I’m off on Duty...{" "}
-          </h2>
-          <div>
-            <ThreeDRing/>
-          </div>
-          
-
-          <p className="text-bodymedium font-semibold text-white px-[120px] py-4">
-            "You’ll either find me in a dark theatre, first-day-first-show-ing
-            the latest release, or out on the cricket ground swinging for sixes
-            or just cruising around town with my homies."
-          </p>
-        </section> */}
-
-        <section
+        </Reveal>
+        
+        <Reveal>
+          <ToolsSection />
+        </Reveal>
+        
+        <Reveal>
+          <section
           data-theme="dark"
           className="bg-[#0E100F] text-white py-16 px-6 min-h-screen mx-auto text-center flex flex-col items-center justify-center"
         >
@@ -273,9 +261,12 @@ export default function About() {
             or just cruising around town with my homies."
           </p>
         </section>
+        </Reveal>
+        
 
         {/* Call To Action */}
-        <section
+        <Reveal bg="#0E100F">
+          <section
           data-theme="dark"
           className="bg-[#0E100F] text-white py-16 px-6 text-center border-b"
         >
@@ -297,6 +288,8 @@ export default function About() {
                                               </Button>
           </div>
         </section>
+        </Reveal>
+        
       </main>
       <Footer />
     </div>

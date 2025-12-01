@@ -114,8 +114,8 @@ export default function DesignSystem() {
               <CalendarHeartIcon size={28} weight="duotone" />
               <p>I had 30 days</p>
             </div>
-            <p className="text-bodymedium font-medium">
-              In that time I was tasked with:
+            <div>
+              <p className="text-bodymedium font-medium">In that time I was tasked with:</p>
               <ul className="list-disc pl-6 mt-2 mb-2 text-bodymedium font-medium">
                 <li>Creating a style guide (typography, spacing, palettes)</li>
                 <li>Conduction UI Audits to find the pattern we use.</li>
@@ -125,10 +125,10 @@ export default function DesignSystem() {
                   (React + MUI) so design and dev matched perfectly
                 </li>
               </ul>
-              It felt ambitious — especially as I was still at “intermediate”
+              <p className="text-bodymedium font-medium">It felt ambitious — especially as I was still at “intermediate”
               level in system building. But the urgency of multi-client projects
-              meant we needed to act.
-            </p>
+              meant we needed to act.</p>
+            </div>
           </div>
 
           <Image
@@ -223,11 +223,13 @@ export default function DesignSystem() {
 
           <p className="text-bodymedium font-medium mt-6 mb-6">
             Each component had:
-            <ul className="list-disc list-inside pl-3 py-1">
+          </p>
+          <ul className="list-disc list-inside pl-3 py-1">
               <li>Usage explanation (“when to use”)</li>
               <li>Anatomy (what parts make up the component)</li>
               <li>Best practices & do’s and don’ts</li>
-            </ul>
+          </ul>
+          <p className="text-bodymedium font-medium">
             Then I stored them in organized pages in Figma.
           </p>
 

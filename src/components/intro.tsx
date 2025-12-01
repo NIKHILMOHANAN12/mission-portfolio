@@ -69,16 +69,6 @@ export default function HeroSection() {
         </h1>
       </div>
 
-      {/* Logo */}
-      {/* <div className="mb-4">
-        <Image
-          src="/images/letter.png"
-          width={80}
-          height={80}
-          alt="Logo"
-          className="mx-auto rounded-3xl"
-        />
-      </div> */}
       {/* Icons Row */}
       <div className="px-14 max-w-6xl mx-auto">
         <Link href="/about" className="flex justify-center">
@@ -139,7 +129,7 @@ export default function HeroSection() {
         </h2>
 
         {/* Bottom small text with icon */}
-        <div className="flex items-center justify-center gap-2 mt-6 text-bodysmall">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-2 mt-6 text-bodysmall">
           <OfficeChairIcon size={20} />
           <span>
             Currently working at <b>Ospyn Technologies</b> in Trivandrum,
