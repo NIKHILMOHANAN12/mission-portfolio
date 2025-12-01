@@ -32,14 +32,14 @@ export default function DesignSystem() {
 
       {/* Hero Section */}
       <section className="mb-16">
-        <span className="inline-flex w-fit items-center gap-1 text-bodysmall py-2 px-4 bg-[#DBEAFE] rounded-full font-semibold">
+        <span className="inline-flex w-fit items-center gap-1 text-[14px] md:text-bodysmall py-2 px-4 bg-[#DBEAFE] rounded-full font-semibold">
           <PenNibStraightIcon size={20} weight="duotone" />
           In-House Project
         </span>
-        <h1 className="text-h4 font-bold mt-3">
+        <h1 className="text-h5 md:text-h4 font-bold mt-3">
           Designing Consistency: Crafting Ospyn’s First Design System
         </h1>
-        <p className="text-bodymedium font-regular mt-1 text-gray-600">
+        <p className="text-bodysmall md:text-bodymedium font-regular mt-1 text-gray-600">
           Creating a scalable, documented, and developer-friendly design system
           for our Organisation.
         </p>
@@ -48,25 +48,25 @@ export default function DesignSystem() {
       {/* Project Details */}
       <section className="mb-24">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-          <div className="flex flex-col gap-2">
-            <p className="font-semibold text-bodymedium">Role</p>
-            <p className="text-bodysmall">UI/UX Designer, UI Developer</p>
+          <div className="flex flex-col gap-1 md:gap-2">
+            <p className="font-semibold text-bodysmall md:text-bodymedium">Role</p>
+            <p className="text-[14px] md:text-bodysmall">UI/UX Designer, UI Developer</p>
           </div>
-          <div className="flex flex-col gap-2">
-            <p className="font-semibold text-bodymedium">Team</p>
-            <p className="text-bodysmall">
+          <div className="flex flex-col gap-1 md:gap-2">
+            <p className="font-semibold text-bodysmall md:text-bodymedium">Team</p>
+            <p className="text-[14px] md:text-bodysmall">
               Nikhil Mohan (Me), <br />
               Ospyn UX Team, <br />
               Ospyn Front-End Developers, <br />
             </p>
           </div>
-          <div className="flex flex-col gap-2">
-            <p className="font-semibold text-bodymedium">Timeline</p>
-            <p className="text-bodysmall">July 2025 - Present</p>
+          <div className="flex flex-col gap-1 md:gap-2">
+            <p className="font-semibold text-bodysmall md:text-bodymedium">Timeline</p>
+            <p className="text-[14px] md:text-bodysmall">July 2025 - Present</p>
           </div>
-          <div className="flex flex-col gap-2">
-            <p className="font-semibold text-bodymedium">Project Type</p>
-            <p className="text-bodysmall">
+          <div className="flex flex-col gap-1 md:gap-2">
+            <p className="font-semibold text-bodysmall md:text-bodymedium">Project Type</p>
+            <p className="text-[14px] md:text-bodysmall">
               In-house Project
               <br />
               Design System
@@ -88,9 +88,9 @@ export default function DesignSystem() {
           />
         </div>
 
-        <div className="flex flex-col gap-4">
-          <h2 className="text-h5 font-bold">The Problem I Walked Into</h2>
-          <p className="text-black text-bodymedium font-medium">
+        <div className="flex flex-col gap-2 md:gap-4">
+          <h2 className="text-h6 md:text-h5 font-bold">The Problem I Walked Into</h2>
+          <p className="text-black text-bodysmall md:text-bodymedium font-medium">
             When I joined Ospyn, I noticed something repeating on project after
             project: every designer was reinventing the wheel. Buttons, inputs,
             spacing, colors — they all varied. Developers were using random hex
@@ -107,16 +107,16 @@ export default function DesignSystem() {
 
       {/* My One‐Month Mission */}
       <section className="mb-24">
-        <h2 className="text-h5 font-bold mb-4">My One‐Month Mission</h2>
+        <h2 className="text-h6 md:text-h5 font-bold mb-4">My One‐Month Mission</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-end justify-between">
           <div className="flex flex-col gap-2">
-            <div className="flex items-center gap-1 text-bodylarge font-semibold px-3 py-[6px] rounded-md bg-[#DBEAFE] w-fit">
+            <div className="flex items-center gap-1 text-bodymedium md:text-bodylarge font-semibold px-3 py-[6px] rounded-md bg-[#DBEAFE] w-fit">
               <CalendarHeartIcon size={28} weight="duotone" />
               <p>I had 30 days</p>
             </div>
             <div>
-              <p className="text-bodymedium font-medium">In that time I was tasked with:</p>
-              <ul className="list-disc pl-6 mt-2 mb-2 text-bodymedium font-medium">
+              <p className="text-bodysmall md:text-bodymedium font-medium">In that time I was tasked with:</p>
+              <ul className="list-disc pl-6 mt-2 mb-2 text-bodysmall md:text-bodymedium font-medium">
                 <li>Creating a style guide (typography, spacing, palettes)</li>
                 <li>Conduction UI Audits to find the pattern we use.</li>
                 <li>Building UI components in Figma</li>
@@ -125,7 +125,7 @@ export default function DesignSystem() {
                   (React + MUI) so design and dev matched perfectly
                 </li>
               </ul>
-              <p className="text-bodymedium font-medium">It felt ambitious — especially as I was still at “intermediate”
+              <p className="text-bodysmall md:text-bodymedium font-medium">It felt ambitious — especially as I was still at “intermediate”
               level in system building. But the urgency of multi-client projects
               meant we needed to act.</p>
             </div>
@@ -142,19 +142,19 @@ export default function DesignSystem() {
 
       {/* Building the Foundation */}
       <section className="mb-24">
-        <h2 className="text-h5 font-bold mb-4">Building the Foundation</h2>
+        <h2 className="text-h6 md:text-h5 font-bold mb-4">Building the Foundation</h2>
         <div className="flex flex-col gap-4">
-          <p className="text-bodymedium font-medium">
+          <p className="text-bodysmall md:text-bodymedium font-medium">
             Before jumping into components, I did a UI audit of our existing
             screens.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="px-4 py-4 border border-gray-200 rounded-lg">
-              <p className=" flex items-center justify-center gap-1 w-full px-2 py-2 bg-black text-white rounded mb-2">
+              <p className=" flex items-center justify-center text-bodysmall md:text-bodymedium gap-1 w-full px-2 py-2 bg-black text-white rounded mb-2">
                 <BinocularsIcon size={24} weight="duotone" />I Discovered
               </p>
-              <ul className="list-disc list-inside">
+              <ul className="list-disc list-inside text-bodysmall md:text-bodymedium">
                 <li>
                   Base font size was often 14px, designers used small fonts
                   rather than large display styles.
@@ -165,10 +165,10 @@ export default function DesignSystem() {
             </div>
 
             <div className="px-4 py-4 border border-gray-200 rounded-lg">
-              <p className=" flex items-center justify-center gap-1 w-full px-2 py-2 bg-black text-white rounded mb-2">
+              <p className=" flex items-center justify-center gap-1 text-bodysmall md:text-bodymedium w-full px-2 py-2 bg-black text-white rounded mb-2">
                 <RulerIcon size={24} weight="duotone" />I set the rules to
               </p>
-              <ul className="list-disc list-inside">
+              <ul className="list-disc list-inside text-bodysmall md:text-bodymedium">
                 <li>Typography: base 14px, simple fonts, no fancy displays.</li>
                 <li>
                   Spacing: 4px baseline grid — so everything aligned neatly.
@@ -190,7 +190,7 @@ export default function DesignSystem() {
             />
           </div>
 
-          <p className="text-bodymedium font-medium mt-4">
+          <p className="text-bodysmall md:text-bodymedium font-medium mt-4">
             Then in Figma I used Variables, Tokens, and Properties so any
             designer joining Ospyn could plug into these guidelines and start
             working.
@@ -203,9 +203,9 @@ export default function DesignSystem() {
 
       {/* Creating Components */}
       <section className="mb-24">
-        <h2 className="text-h5 font-bold mb-4">Creating Components</h2>
+        <h2 className="text-h6 md:text-h5 font-bold mb-4">Creating Components</h2>
         <div className="flex flex-col gap-4">
-          <p className="text-bodymedium font-medium">
+          <p className="text-bodysmall md:text-bodymedium font-medium">
             With that foundation set, I moved into components.
             <br />
             In Figma I built: <b>Buttons, Input Fields, Section Headers</b> —
@@ -221,15 +221,15 @@ export default function DesignSystem() {
             />
           </div>
 
-          <p className="text-bodymedium font-medium mt-6 mb-6">
+          <p className="text-bodysmall md:text-bodymedium font-medium mt-6 mb-6">
             Each component had:
           </p>
-          <ul className="list-disc list-inside pl-3 py-1">
+          <ul className="list-disc list-inside pl-3 py-1 text-bodysmall md:text-bodymedium">
               <li>Usage explanation (“when to use”)</li>
               <li>Anatomy (what parts make up the component)</li>
               <li>Best practices & do’s and don’ts</li>
           </ul>
-          <p className="text-bodymedium font-medium">
+          <p className="text-bodysmall md:text-bodymedium font-medium">
             Then I stored them in organized pages in Figma.
           </p>
 
@@ -245,7 +245,7 @@ export default function DesignSystem() {
           </div>
 
           <p
-            className="text-bodymedium font-medium mt-6
+            className="text-bodysmall md:text-bodymedium font-medium mt-6
         "
           >
             Parallel to this, our dev team started converting components into
@@ -258,9 +258,9 @@ export default function DesignSystem() {
 
       {/* Storybook: The Living Source */}
       <section className="mb-24">
-        <h2 className="text-h5 font-bold">Storybook: The Living Source</h2>
+        <h2 className="text-h6 md:text-h5 font-bold">Storybook: The Living Source</h2>
         <div className="flex flex-col gap-4">
-          <p className="text-bodymedium font-medium">
+          <p className="text-bodysmall md:text-bodymedium font-medium">
             The final piece? Storybook.
           </p>
 
@@ -273,7 +273,7 @@ export default function DesignSystem() {
             />
           </div>
 
-          <div className="flex flex-col gap-3 text-bodymedium font-medium mt-4">
+          <div className="flex flex-col gap-3 text-bodysmall md:text-bodymedium font-medium mt-4">
             <p>
               We took all the coded components + documentation and published
               them in our Storybook-repository. Now:
@@ -301,9 +301,9 @@ export default function DesignSystem() {
 
       {/* Impacts we created */}
       <section className="mb-24">
-        <h2 className="text-h5 font-bold mb-4">Impacts we created</h2>
+        <h2 className="text-h6 md:text-h5 font-bold mb-4">Impacts we created</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="flex gap-2 font-medium text-bodymedium items-start">
+          <div className="flex gap-2 font-medium text-bodysmall md:text-bodymedium items-start">
             <Image
               src="/images/badge.png"
               alt="Icon"
@@ -313,7 +313,7 @@ export default function DesignSystem() {
             />
             <p>Delivered 70% faster on new screens (because reuse = speed).</p>
           </div>
-          <div className="flex gap-2 font-medium text-bodymedium items-start">
+          <div className="flex gap-2 font-medium text-bodysmall md:text-bodymedium items-start">
             <Image
               src="/images/badge.png"
               alt="Icon"
@@ -323,7 +323,7 @@ export default function DesignSystem() {
             />
             <p>Dramatic drop in inconsistent UI between modules.</p>
           </div>
-          <div className="flex gap-2 font-medium text-bodymedium items-start">
+          <div className="flex gap-2 font-medium text-bodysmall md:text-bodymedium items-start">
             <Image
               src="/images/badge.png"
               alt="Icon"
@@ -333,7 +333,7 @@ export default function DesignSystem() {
             />
             <p>Designers and devs now share a single language.</p>
           </div>
-          <div className="flex gap-2 font-medium text-bodymedium items-start">
+          <div className="flex gap-2 font-medium text-bodysmall md:text-bodymedium items-start">
             <Image
               src="/images/badge.png"
               alt="Icon"
@@ -351,8 +351,8 @@ export default function DesignSystem() {
 
       {/* Reflections */}
       <section className="mb-24">
-        <h2 className="text-h4 font-bold mb-4">Reflections & Learnings</h2>
-        <ul className="list-disc pl-6 space-y-2 text-bodymedium font-medium">
+        <h2 className="text-h6 md:text-h5 font-bold mb-4">Reflections & Learnings</h2>
+        <ul className="list-disc pl-6 space-y-2 text-bodysmall md:text-bodymedium font-medium">
           <li>
             A design system isn’t just about components—
             <b>it’s about process, people, and evolution.</b>
@@ -372,8 +372,8 @@ export default function DesignSystem() {
 
       {/* What I Learned & What’s Next */}
       <section className="mb-24">
-        <h2 className="text-h4 font-bold mb-4">What I Learned & What’s Next</h2>
-        <p className="text-bodymedium font-medium">
+        <h2 className="text-h6 md:text-h5 font-bold mb-4">What I Learned & What’s Next</h2>
+        <p className="text-bodysmall md:text-bodymedium font-medium">
           I learned that building a design system isn’t just about components —
           it’s about culture change: aligning designers, developers, product
           owners around one system.
@@ -396,14 +396,14 @@ export default function DesignSystem() {
           height={428}
           className="mx-auto object-cover"
         />
-        <h3 className="text-bodymedium font-semibold mt-6">
+        <h3 className="text-bodysmall md:text-bodymedium font-semibold mt-6">
           Thank you for Reading!
         </h3>
       </section>
 
       {/* Explore Other */}
       <section className="mb-16">
-        <h2 className="text-center text-h5 font-semibold mb-6">
+        <h2 className="text-center text-h6 md:text-h5 font-semibold md:font-semibold mb-6">
           Explore My Other Case Studies
         </h2>
 
@@ -418,7 +418,7 @@ export default function DesignSystem() {
               />
             </div>
 
-            <p className="text-bodymedium font-semibold mb-4">
+            <p className="text-bodysmall md:text-bodymedium font-semibold mb-4">
               Rise of a Volunteer Management App
             </p>
 
@@ -437,7 +437,7 @@ export default function DesignSystem() {
               />
             </div>
 
-            <p className="text-bodymedium font-semibold mb-4">
+            <p className="text-bodysmall md:text-bodymedium font-semibold mb-4">
               Learning from Learners: A UX Story
             </p>
 
@@ -456,7 +456,7 @@ export default function DesignSystem() {
               />
             </div>
 
-            <p className="text-bodymedium font-semibold mb-4">
+            <p className="text-bodysmall md:text-bodymedium font-semibold mb-4">
               A UX Journey in the Banking Sector
             </p>
 

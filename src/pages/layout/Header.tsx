@@ -79,6 +79,10 @@ const Header = () => {
           >
             <Menu size={30} />
           </button>
+
+          {/* <div className="mt-8">
+          <OpenToWorkTag />
+        </div> */}
         </div>
       </header>
 
@@ -101,9 +105,7 @@ const Header = () => {
         </div>
 
         {/* Optional Open To Work tag on mobile */}
-        <div className="mt-8">
-          <OpenToWorkTag />
-        </div>
+        
       </div>
     </>
   );
