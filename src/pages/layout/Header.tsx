@@ -101,7 +101,8 @@ const Header = () => {
 
         {/* Full Menu Items (your Navbar component) */}
         <div className="text-center space-y-8 text-h4 font-semibold">
-          <MobileNavbar/>
+          <MobileNavbar onNavigate={() => setMenuOpen(false)} />
+
         </div>
 
         {/* Optional Open To Work tag on mobile */}
