@@ -22,7 +22,7 @@ export default function LearningFromLearners() {
 
       {/* Hero Section */}
       <section className="mb-24">
-        <span className="inline-flex w-fit items-center gap-1 text-bodysmall py-2 px-4 bg-[#DBEAFE] rounded-full font-semibold">
+        <span className="inline-flex w-fit items-center gap-1 text-[14px] md:text-bodysmall py-2 px-4 bg-[#DBEAFE] rounded-full font-semibold">
           <PenNibStraightIcon size={20} weight="duotone" />
           In-House Project
         </span>

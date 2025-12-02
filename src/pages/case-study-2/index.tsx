@@ -25,14 +25,14 @@ export default function VolunteerApp() {
 
       {/* Hero Section */}
       <section className="mb-16">
-        <span className="inline-flex w-fit items-center gap-1 text-bodysmall py-2 px-4 bg-[#DBEAFE] rounded-full font-semibold">
+        <span className="inline-flex w-fit items-center gap-1 text-[14px] md:text-bodysmall py-2 px-4 bg-[#DBEAFE] rounded-full font-semibold">
           <PenNibStraightIcon size={20} weight="duotone" />
           Freelancing
         </span>
-        <h1 className="text-h4 font-bold mt-3">
+        <h1 className="text-h5 md:text-h4 font-bold md:font-bold mt-3">
           Rise of a Volunteer Management App
         </h1>
-        <p className="text-bodymedium font-regular mt-1 text-gray-600">
+        <p className="text-bodysmall md:text-bodymedium font-regular mt-1 text-gray-600">
           A Mobile-First Solution for Smarter Volunteer Coordination
         </p>
       </section>
@@ -41,12 +41,12 @@ export default function VolunteerApp() {
       <section className="mb-24">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           <div className="flex flex-col gap-2">
-            <p className="font-semibold text-bodymedium">Role</p>
-            <p className="text-bodysmall">Research, UI/UX Designer</p>
+            <p className="font-semibold md:font-semibold text-bodysmall md:text-bodymedium">Role</p>
+            <p className="text-[14px] md:text-bodysmall">Research, UI/UX Designer</p>
           </div>
           <div className="flex flex-col gap-2">
-            <p className="font-semibold text-bodymedium">Team</p>
-            <p className="text-bodysmall">
+            <p className="font-semibold md:font-semibold text-bodysmall md:text-bodymedium">Team</p>
+            <p className="text-[14px] md:text-bodysmall">
               Nikhil Mohan (Me - UI/UX Designer),
               <br />
               Hanan Binth Basheer (UX Research),
@@ -57,12 +57,12 @@ export default function VolunteerApp() {
             </p>
           </div>
           <div className="flex flex-col gap-2">
-            <p className="font-semibold text-bodymedium">Timeline</p>
-            <p className="text-bodysmall">Sep 2024 - Mar 2024</p>
+            <p className="font-semibold md:font-semibold text-bodysmall md:text-bodymedium">Timeline</p>
+            <p className="text-[14px] md:text-bodysmall">Sep 2024 - Mar 2024</p>
           </div>
           <div className="flex flex-col gap-2">
-            <p className="font-semibold text-bodymedium">Project Type</p>
-            <p className="text-bodysmall">
+            <p className="font-semibold md:font-semibold text-bodysmall md:text-bodymedium">Project Type</p>
+            <p className="text-[14px] md:text-bodysmall">
               Mobile App
               <br />
               0 → 1
@@ -86,11 +86,11 @@ export default function VolunteerApp() {
           />
         </div>
 
-        <h2 className="text-h5 font-bold mb-4">How we reached to this idea?</h2>
+        <h2 className="text-h6 md:text-h5 font-bold md:font-bold mb-4">How we reached to this idea?</h2>
 
         <div className="flex flex-col gap-4">
           
-          <p className="text-black text-bodymedium font-medium">
+          <p className="text-black text-bodysmall md:text-bodymedium font-medium md:font-medium">
             When I first met the team at Insight for Innovation, they were doing
             something incredible — managing over 9,000 volunteers, guiding
             62,000+ students, and coordinating across 100+ schools in Kerala and
@@ -119,9 +119,9 @@ export default function VolunteerApp() {
 
       {/* The Challenge */}
       <section className="mb-24">
-        <h2 className="text-h5 font-bold mb-4">The Challenge</h2>
+        <h2 className="text-h6 md:text-h5 font-bold md:font-bold mb-4">The Challenge</h2>
         <div className="flex flex-col gap-3">
-          <p className="text-black text-bodymedium font-medium">
+          <p className="text-black text-bodysmall md:text-bodymedium font-medium md:font-medium">
             The organization needed more than a digital version of their
             spreadsheets — they needed a scalable, mobile-first solution that:
           </p>
@@ -134,8 +134,8 @@ export default function VolunteerApp() {
                 height={162}
               />
               <div className="flex flex-col gap-0">
-                <p className="text-bodysmall text-[#B8B8B8]">#Challenge</p>
-                <p className="text-bodymedium font-semibold leading-1">
+                <p className="text-[14px] md:text-bodysmall text-[#B8B8B8]">#Challenge</p>
+                <p className="text-bodysmall md:text-bodymedium font-semibold md:font-semibold leading-1">
                   Simplified the lives of volunteers and coordinators
                 </p>
               </div>
@@ -149,8 +149,8 @@ export default function VolunteerApp() {
                 height={162}
               />
               <div className="flex flex-col gap-0">
-                <p className="text-bodysmall text-[#B8B8B8]">#Challenge</p>
-                <p className="text-bodymedium font-semibold leading-1">
+                <p className="text-[14px] md:text-bodysmall text-[#B8B8B8]">#Challenge</p>
+                <p className="text-bodysmall md:text-bodymedium font-semibold md:font-semibold leading-1">
                   Enabled real-time evaluation and feedback
                 </p>
               </div>
@@ -164,8 +164,8 @@ export default function VolunteerApp() {
                 height={162}
               />
               <div className="flex flex-col gap-0">
-                <p className="text-bodysmall text-[#B8B8B8]">#Challenge</p>
-                <p className="text-bodymedium font-semibold leading-1">
+                <p className="text-[14px] md:text-bodysmall text-[#B8B8B8]">#Challenge</p>
+                <p className="text-bodysmall md:text-bodymedium font-semibold md:font-semibold leading-1">
                   Brought transparency to student performance tracking
                 </p>
               </div>
@@ -179,8 +179,8 @@ export default function VolunteerApp() {
                 height={162}
               />
               <div className="flex flex-col gap-0">
-                <p className="text-bodysmall text-[#B8B8B8]">#Challenge</p>
-                <p className="text-bodymedium font-semibold leading-1">
+                <p className="text-[14px] md:text-bodysmall text-[#B8B8B8]">#Challenge</p>
+                <p className="text-bodysmall md:text-bodymedium font-semibold md:font-semibold leading-1">
                   Protected Sensitive Data with secure role-based access
                 </p>
               </div>
@@ -191,15 +191,15 @@ export default function VolunteerApp() {
 
       {/* The Mission */}
       <section className="mb-24">
-        <h2 className="text-h5 font-bold mb-4">The Mission</h2>
+        <h2 className="text-h6 md:text-h5 font-bold md:font-bold mb-4">The Mission</h2>
         <div className="flex flex-col gap-4">
-          <p className="text-black text-bodymedium font-medium">
+          <p className="text-black text-bodysmall md:text-bodymedium font-medium md:font-medium">
             I took on the role of Lead UI/UX Designer, steering the entire
             design journey from research to handoff.
           </p>
-          <p className="text-bodymedium font-semibold">
+          <p className="text-bodysmall md:text-bodymedium font-semibold md:font-semibold">
             Our mission was to <br />
-            <span className="text-h3 font-bold inline-block w-3/4">
+            <span className="text-h4 md:text-h3 font-bold md:font-bold inline-block w-3/4">
               “Build an intuitive, role-based mobile app that fits seamlessly
               into the daily lives of the people using it.”
             </span>
@@ -209,17 +209,17 @@ export default function VolunteerApp() {
 
       {/* The Journey */}
       <section className="mb-24">
-        <h2 className="text-h5 font-bold mb-4">The Journey</h2>
+        <h2 className="text-h6 md:text-h5 font-bold md:font-bold mb-4">The Journey</h2>
         <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-3">
             <div className="flex items-center gap-2">
               <ArrowElbowDownRightIcon size={24}/>
-              <h3 className="text-h6 font-semibold">
+              <h3 className="text-bodymedium md:text-h6 font-semibold md:font-semibold">
                 Understanding the Humans Behind the Numbers
               </h3>
             </div>
             
-            <p className="text-black text-bodymedium font-medium">
+            <p className="text-black text-bodysmall md:text-bodymedium font-medium md:font-medium">
               We began with stakeholder interviews — sitting down with
               volunteers, district coordinators, and quality analysts. We
               shadowed their daily work, listened to frustrations, and mapped
@@ -253,12 +253,12 @@ export default function VolunteerApp() {
           <div className="flex flex-col gap-3 mt-8">
             <div className="flex items-center gap-2">
               <ArrowElbowDownRightIcon size={24}/>
-              <h3 className="text-h6 font-semibold">
+              <h3 className="text-bodymedium md:text-h6 font-semibold md:font-semibold">
                 Designing for Clarity and Flow
               </h3>
             </div>
         
-            <p className="text-black text-bodymedium font-medium">
+            <p className="text-black text-bodysmall md:text-bodymedium font-medium md:font-medium">
               With insights in hand, we crafted user flows and information
               architecture, ensuring that each role saw only what they needed —
               nothing more, nothing less. We moved from mid-fidelity wireframes
@@ -278,11 +278,11 @@ export default function VolunteerApp() {
           <div className="flex flex-col gap-3 mt-8">
             <div className="flex items-center gap-2">
               <ArrowElbowDownRightIcon size={24}/>
-              <h3 className="text-h6 font-semibold">
+              <h3 className="text-bodymedium md:text-h6 font-semibold md:font-semibold">
                 Building Together
               </h3>
             </div>
-            <p className="text-black text-bodymedium font-medium">
+            <p className="text-black text-bodysmall md:text-bodymedium font-medium md:font-medium">
               Once designs were validated, I delivered:
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 justify-between">
@@ -294,10 +294,10 @@ export default function VolunteerApp() {
                   height={162}
                 />
                 <div className="flex flex-col gap-0">
-                  <p className="text-bodysmall text-[#B8B8B8]">
+                  <p className="text-[14px] md:text-bodysmall text-[#B8B8B8]">
                     #Final Deliveries
                   </p>
-                  <p className="text-bodymedium font-semibold leading-1">
+                  <p className="text-bodysmall md:text-bodymedium font-semibold md:font-semibold leading-1">
                     A complete design system for consistency
                   </p>
                 </div>
@@ -311,10 +311,10 @@ export default function VolunteerApp() {
                   height={162}
                 />
                 <div className="flex flex-col gap-0">
-                  <p className="text-bodysmall text-[#B8B8B8]">
+                  <p className="text-[14px] md:text-bodysmall text-[#B8B8B8]">
                     #Final Deliveries
                   </p>
-                  <p className="text-bodymedium font-semibold leading-1">
+                  <p className="text-bodysmall md:text-bodymedium font-semibold md:font-semibold leading-1">
                     Interactive prototypes for seamless handoff
                   </p>
                 </div>
@@ -328,10 +328,10 @@ export default function VolunteerApp() {
                   height={162}
                 />
                 <div className="flex flex-col gap-0">
-                  <p className="text-bodysmall text-[#B8B8B8]">
+                  <p className="text-[14px] md:text-bodysmall text-[#B8B8B8]">
                     #Final Deliveries
                   </p>
-                  <p className="text-bodymedium font-semibold leading-1">
+                  <p className="text-bodysmall md:text-bodymedium font-semibold md:font-semibold leading-1">
                     Clear documentation for development and QA
                   </p>
                 </div>
@@ -345,7 +345,7 @@ export default function VolunteerApp() {
 
       {/* Key Features */}
       <section className="mb-24">
-        <h2 className="text-h5 font-bold mb-8">
+        <h2 className="text-h6 md:text-h5 font-bold md:font-bold mb-8">
             Key Features That Changed the Game
         </h2>
         <div className="flex flex-col gap-8">
@@ -399,13 +399,13 @@ export default function VolunteerApp() {
 
       {/* Impacts we created */}
       <section className="mb-24">
-        <h2 className="text-h5 font-bold mb-4">Impacts we created</h2>
-        <p className="text-bodymedium font-medium mb-4">
+        <h2 className="text-h6 md:text-h5 font-bold md:font-bold mb-4">Impacts we created</h2>
+        <p className="text-bodysmall md:text-bodymedium font-medium md:font-medium mb-4">
           The launch was a success — the app went live on both Play Store and
           App Store. Within weeks:
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="flex gap-2 font-medium text-bodymedium items-start">
+          <div className="flex gap-2 font-medium md:font-medium text-bodysmall md:text-bodymedium items-start">
             <Image
               src="/images/badge.png"
               alt="Icon"
@@ -418,7 +418,7 @@ export default function VolunteerApp() {
               old manual process.
             </p>
           </div>
-          <div className="flex gap-2 font-medium text-bodymedium items-start">
+          <div className="flex gap-2 font-medium md:font-medium text-bodysmall md:text-bodymedium items-start">
             <Image
               src="/images/badge.png"
               alt="Icon"
@@ -431,7 +431,7 @@ export default function VolunteerApp() {
               tools.
             </p>
           </div>
-          <div className="flex gap-2 font-medium text-bodymedium items-start">
+          <div className="flex gap-2 font-medium md:font-medium text-bodysmall md:text-bodymedium items-start">
             <Image
               src="/images/badge.png"
               alt="Icon"
@@ -444,7 +444,7 @@ export default function VolunteerApp() {
               sheets and WhatsApp groups.
             </p>
           </div>
-          <div className="flex gap-2 font-medium text-bodymedium items-start">
+          <div className="flex gap-2 font-medium md:font-medium text-bodysmall md:text-bodymedium items-start">
             <Image
               src="/images/badge.png"
               alt="Icon"
@@ -457,7 +457,7 @@ export default function VolunteerApp() {
               badges.
             </p>
           </div>
-          <div className="flex gap-2 font-medium text-bodymedium items-start">
+          <div className="flex gap-2 font-medium md:font-medium text-bodysmall md:text-bodymedium items-start">
             <Image
               src="/images/badge.png"
               alt="Icon"
@@ -470,7 +470,7 @@ export default function VolunteerApp() {
               volunteer activity.
             </p>
           </div>
-          <div className="flex gap-2 font-medium text-bodymedium items-start">
+          <div className="flex gap-2 font-medium md:font-medium text-bodysmall md:text-bodymedium items-start">
             <Image
               src="/images/badge.png"
               alt="Icon"
@@ -488,8 +488,8 @@ export default function VolunteerApp() {
 
       {/* Reflections */}
       <section className="mb-24">
-        <h2 className="text-h4 font-bold mb-4">Reflections & Learnings</h2>
-        <ul className="list-disc pl-6 space-y-2 text-bodymedium font-medium">
+        <h2 className="text-h6 md:text-h5 font-bold md:font-bold mb-4">Reflections & Learnings</h2>
+        <ul className="list-disc pl-6 space-y-2 text-bodysmall md:text-bodymedium md:font-medium font-medium">
           <li>
             Learned to design for
             <b>diverse users with different needs.</b>
@@ -512,11 +512,11 @@ export default function VolunteerApp() {
 
       {/* What I Learned & What’s Next */}
       <section className="mb-24">
-        <h2 className="text-h4 font-bold mb-4">
+        <h2 className="text-h6 md:text-h5 font-bold md:font-bold mb-4">
           What’s Next
           </h2>
-        <p className="text-bodymedium font-medium">We plan to:</p>
-        <ul className="list-disc pl-6 space-y-2 text-bodymedium font-medium">
+        <p className="text-bodysmall md:text-bodymedium md:font-medium font-medium">We plan to:</p>
+        <ul className="list-disc pl-6 space-y-2 text-bodysmall md:text-bodymedium md:font-medium font-medium">
           <li>
             Including Location/Map feature for Volunteers to easily locate
             schools and plan travel routes.
@@ -546,14 +546,14 @@ export default function VolunteerApp() {
                 height={428}
                 className="mx-auto object-cover"
               />
-              <h3 className="text-bodymedium font-semibold mt-6">
+              <h3 className="text-bodysmall md:text-bodymedium font-semibold mt-6">
                 Thank you for Reading!
               </h3>
             </section>
 
       {/* Explore Other */}
       <section className="mb-24">
-        <h2 className="text-center text-h5 font-semibold mb-8">
+        <h2 className="text-center text-h6 md:text-h5 font-bold md:font-bold mb-8">
           Explore My Other Case Studies
         </h2>
 
@@ -567,7 +567,7 @@ export default function VolunteerApp() {
               />
             </div>
 
-            <p className="text-bodymedium font-semibold mb-4">
+            <p className="text-bodysmall md:text-bodymedium font-semibold md:font-semibold mb-4">
               Crafting Ospyn’s First Design System
             </p>
 
@@ -586,7 +586,7 @@ export default function VolunteerApp() {
               />
             </div>
 
-            <p className="text-bodymedium font-semibold mb-4">
+            <p className="text-bodysmall md:text-bodymedium font-semibold md:font-semibold mb-4">
               Learning from Learners: A UX Story
             </p>
 
@@ -605,7 +605,7 @@ export default function VolunteerApp() {
               />
             </div>
 
-            <p className="text-bodymedium font-semibold mb-4">
+            <p className="text-bodysmall md:text-bodymedium font-semibold md:font-semibold mb-4">
               A UX Journey in the Banking Sector
             </p>
 
