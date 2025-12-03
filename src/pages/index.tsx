@@ -26,7 +26,7 @@ export default function Home() {
       >
         <div className="cloudLoop"></div>
         <div className="h-screen w-full overflow-hidden">
-          <Image className="h-full w-full object-cover" src={homeImg} alt="An Image of a character named Ethan Hunt from the film named Mission Impossible, diving from the mountains" />
+          <Image className="h-full w-full object-cover cloud-fade" src={homeImg} alt="An Image of a character named Ethan Hunt from the film named Mission Impossible, diving from the mountains" />
         </div>
         <div className="absolute top-0  w-full h-full">
           <div className="max-w-6xl mx-auto h-full flex justify-center items-center px-6 py-16 space-y-10 ">

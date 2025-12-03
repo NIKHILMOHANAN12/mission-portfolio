@@ -5,7 +5,7 @@ import { ArrowElbowDownRightIcon, ArrowElbowRightIcon, PenNibStraightIcon } from
 import Image from "next/image";
 import Link from "next/link";
 import Lottie from "lottie-react";
-import animation from "@/lottie/PhoneMockup.json";
+import animationData from "@/lottie/Hello.json";
 
 
 export default function VolunteerApp() {
@@ -111,8 +111,8 @@ export default function VolunteerApp() {
             becoming impossible to scale without burning out their people.
           </p>
           
-          <div className="relative w-full h-[500px]">
-            <Lottie animationData={animation} loop={true} className="w-full h-full" />
+          <div className="relative w-full h-[200px]">
+<Lottie animationData={animationData} loop autoplay />           
           </div>
         </div>
       </section>
@@ -227,21 +227,21 @@ export default function VolunteerApp() {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-3">
               <Card
-                image="/images/dummy.png"
+                image="/images/Persona3.jpg"
                 alt="User need 1"
                 text={`"I really love teaching kids, but honestly, it gets overwhelming. Sometimes I don’t know which school I have to go to until the last minute. I try to prepare lessons, but without knowing the exact schedule, it feels rushed. Also, I don’t get feedback on whether I’m doing well or not — I just go, teach, and leave, hoping I made an impact."`}
                 author="Gokul Raj"
                 subtitle="Insight for Innovation Volunteer"
               />
               <Card
-                image="/images/dummy.png"
+                image="/images/Persona1.jpg"
                 alt="User need 1"
                 text={`"My job is to make sure the teaching quality is maintained, but it’s really tough. There’s no structured way to review or track how volunteers are performing. Sometimes I only get feedback weeks later, and it’s inconsistent. Without proper data, it feels like I’m just guessing rather than actually improving the teaching experience."`}
                 author="Andrea J"
                 subtitle="Insight for Innovation Volunteer"
               />
               <Card
-                image="/images/dummy.png"
+                image="/images/Persona2.jpg"
                 alt="User need 1"
                 text={`"Managing volunteers and schools is like juggling without a proper system. I have to track availability through scattered emails, WhatsApp groups, and phone calls. If someone cancels, I’m stuck finding a replacement last minute, which creates stress for both the school and me. I often feel like I’m firefighting instead of coordinating smoothly."`}
                 author="Karthika R"
