@@ -22,14 +22,14 @@ export default function TradeFinance() {
 
       {/* Hero Section */}
       <section className="mb-16">
-        <span className="inline-flex w-fit items-center gap-1 text-bodysmall py-2 px-4 bg-[#DBEAFE] rounded-full font-semibold">
+        <span className="inline-flex w-fit items-center gap-1 text-[14px] md:text-bodysmall py-2 px-4 bg-[#DBEAFE] rounded-full font-semibold md:font-semibold">
           <PenNibStraightIcon size={20} weight="duotone" />
           In-House Project
         </span>
-        <h1 className="text-h4 font-bold mt-3">
+        <h1 className="text-h5 md:text-h4 font-bold md:font-bold mt-3">
           Reimagining Trade Finance: A UX Journey in the Banking Sector
         </h1>
-        <p className="text-bodymedium font-regular mt-1 text-gray-600">
+        <p className="text-bodysmall md:text-bodymedium font-regular mt-1 text-gray-600">
           A web portal that could digitize and streamline the entire
           documentation process involved in trade finance.
         </p>
@@ -39,12 +39,12 @@ export default function TradeFinance() {
       <section className="mb-24">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           <div className="flex flex-col gap-2">
-            <p className="font-semibold text-bodymedium">Role</p>
-            <p className="text-bodysmall">UI/UX Designer, UI Developer</p>
+            <p className="font-semibold md:font-semibold text-bodysmall md:text-bodymedium">Role</p>
+            <p className="text-[14px] md:text-bodysmall">UI/UX Designer, UI Developer</p>
           </div>
           <div className="flex flex-col gap-2">
-            <p className="font-semibold text-bodymedium">Team</p>
-            <p className="text-bodysmall">
+            <p className="font-semibold md:font-semibold text-bodysmall md:text-bodymedium">Team</p>
+            <p className="text-[14px] md:text-bodysmall">
               Nikhil Mohan (Me),
               <br />
               Ayyappan G (UX Lead),
@@ -55,12 +55,12 @@ export default function TradeFinance() {
             </p>
           </div>
           <div className="flex flex-col gap-2">
-            <p className="font-semibold text-bodymedium">Timeline</p>
-            <p className="text-bodysmall">June 2024 - Present</p>
+            <p className="font-semibold md:font-semibold text-bodysmall md:text-bodymedium">Timeline</p>
+            <p className="text-[14px] md:text-bodysmall">June 2024 - Present</p>
           </div>
           <div className="flex flex-col gap-2">
-            <p className="font-semibold text-bodymedium">Project Type</p>
-            <p className="text-bodysmall">
+            <p className="font-semibold md:font-semibold text-bodysmall md:text-bodymedium">Project Type</p>
+            <p className="text-[14px] md:text-bodysmall">
               FinTech
               <br />
               Dev Handoff
@@ -75,7 +75,7 @@ export default function TradeFinance() {
 
       {/* Intro */}
       <section className="mb-24">
-        <div className="relative w-full h-[378px] mb-10">
+        <div className="relative w-full h-[200px] md:h-[378px] mb-10">
           <Image
             src="/images/Trade Finance Impact.png"
             alt="Impacts we created screen"
@@ -84,10 +84,10 @@ export default function TradeFinance() {
           />
         </div>
 
-        <h2 className="text-h5 font-bold mb-4">The Backdrop</h2>
+        <h2 className="text-h5 md:text-h4 font-bold md:font-bold mb-4">The Backdrop</h2>
 
         <div className="flex flex-col gap-4">
-          <p className="text-black text-bodymedium font-medium">
+          <p className="text-black text-bodysmall md:text-bodymedium font-medium md:font-medium">
             In the world of international trade, banks serve as the backbone -
             validating documents, facilitating transactions, and ensuring smooth
             financial operations across borders. But surprisingly, in many
@@ -96,7 +96,7 @@ export default function TradeFinance() {
             resource-intensive. That’s where our team stepped in.
           </p>
 
-          <div className="relative w-full h-[578px]">
+          <div className="relative w-full h-[216px] md:h-[578px]">
             <Image
               src="/images/Frustrated Employee.png"
               alt="An image of an Employee being frustrated with his office works"
@@ -105,7 +105,7 @@ export default function TradeFinance() {
             />
           </div>
 
-          <p className="text-black text-bodymedium font-medium p-4 bg-slate-100 rounded-lg">
+          <p className="text-black text-bodysmall md:text-bodymedium font-medium md:font-medium p-4 bg-slate-100 rounded-lg">
             <b>Our mission:</b> To design a Trade Finance Application for
             banks—a web portal that could digitize and streamline the entire
             documentation process involved in trade finance. The product had to
@@ -117,10 +117,10 @@ export default function TradeFinance() {
 
       {/* Problem */}
       <section className="mb-24">
-        <h2 className="text-h5 font-bold mb-4">The Problem</h2>
+        <h2 className="text-h5 md:text-h4 font-bold md:font-bold mb-4">The Problem</h2>
 
         <div className="flex flex-col gap-4">
-          <p className="text-black text-bodymedium font-medium">
+          <p className="text-black text-bodysmall md:text-bodymedium font-medium md:font-medium">
             Trade finance involves complex documentation—Letters of Credit, Bill
             of Lading, Shipping documents, etc.—that must be shared, validated,
             and approved between importers, exporters, and their respective
@@ -133,9 +133,9 @@ export default function TradeFinance() {
               <img
                 src="/images/Bank Employee Overwork.png"
                 alt="Frustrated User Image"
-                className="w-full h-[368px] object-cover"
+                className="w-full h-[255px] md:h-[368px] object-cover"
               />
-              <p className="text-bodymedium font-medium">
+              <p className="text-bodysmall md:text-bodymedium font-medium md:font-medium">
                 Delayed transactions
               </p>
             </div>
@@ -144,18 +144,18 @@ export default function TradeFinance() {
               <img
                 src="/images/Bank Employee Helpless.png"
                 alt="Frustrated User Image"
-                className="w-full h-[368px] object-cover"
+                className="w-full h-[255px] md:h-[368px] object-cover"
               />
-              <p className="text-bodymedium font-medium">Increased manpower</p>
+              <p className="text-bodysmall md:text-bodymedium font-medium md:font-medium">Increased manpower</p>
             </div>
 
             <div className="p-4 flex flex-col gap-3 border border-gray-300 rounded-lg">
               <img
                 src="/images/Bank Employee Confused.png"
                 alt="Frustrated User Image"
-                className="w-full h-[368px] object-cover"
+                className="w-full h-[255px] md:h-[368px] object-cover"
               />
-              <p className="text-bodymedium font-medium">
+              <p className="text-bodysmall md:text-bodymedium font-medium md:font-medium">
                 Lack of traceability
               </p>
             </div>
@@ -164,15 +164,15 @@ export default function TradeFinance() {
               <img
                 src="/images/Bank Employee Headache.png"
                 alt="Frustrated User Image"
-                className="w-full h-[368px] object-cover"
+                className="w-full h-[255px] md:h-[368px] object-cover"
               />
-              <p className="text-bodymedium font-medium">
+              <p className="text-bodysmall md:text-bodymedium font-medium md:font-medium">
                 Tedious document verification
               </p>
             </div>
           </div>
 
-          <p className="text-black text-bodymedium font-medium mt-3">
+          <p className="text-black text-bodysmall md:text-bodymedium font-medium md:font-medium mt-3">
             The challenge was to build <b>A Digital platform</b> that replicates
             this offline flow while making it faster, secure, and user-friendly,
             with <b>AI-powered automation to reduce manual effort</b>.
@@ -182,8 +182,8 @@ export default function TradeFinance() {
 
       {/* My Role */}
       <section className="mb-24">
-        <h2 className="text-h5 font-bold mb-4">My Role</h2>
-        <p className="text-bodymedium font-medium">
+        <h2 className="text-h5 md:text-h4 font-bold md:font-bold mb-4">My Role</h2>
+        <p className="text-bodysmall md:text-bodymedium font-medium md:font-medium">
           As the UX Designer, I led the initiative to reimagine the Trade
           Finance application. I collaborated with cross-functional teams
           (Project Manager, Business Analysts, and Developers), facilitated
@@ -194,15 +194,15 @@ export default function TradeFinance() {
 
       {/* Design Approach */}
       <section className="mb-24">
-        <h2 className="text-h5 font-bold mb-8">Design Approach</h2>
+        <h2 className="text-h5 md:text-h4 font-bold md:font-bold mb-8">Design Approach</h2>
         <div className="relative grid grid-cols-1 md:grid-cols-4 gap-4">
           <div className="hidden md:block absolute top-[48px] left-[90px] right-[94px] h-[2px] bg-gray-300"></div>
           <div className="flex flex-col items-center text-center flex-1">
             <div className="relative z-10 flex items-center justify-center">
               <img src="/Icons/Empathize.svg" className="w-24" />
             </div>
-            <h3 className="text-bodylarge font-semibold mt-4">Empathize</h3>
-            <p className="text-bodysmall text-gray-600 mt-2 max-w-[220px]">
+            <h3 className="text-bodymedium md:text-bodylarge font-semibold md:font-semibold mt-4">Empathize</h3>
+            <p className="text-[14px] md:text-bodysmall font-regular md:font-medium text-gray-600 mt-2 max-w-[220px]">
                 Gathered insights through direct discussions with internal users
                 and banking staff.
             </p>
@@ -212,8 +212,8 @@ export default function TradeFinance() {
             <div className="relative z-10 flex items-center justify-center">
               <img src="/Icons/Define.svg" className="w-24" />
             </div>
-            <h3 className="text-bodylarge font-semibold mt-4">Define</h3>
-            <p className="text-bodysmall text-gray-600 mt-2 max-w-[220px]">
+            <h3 className="text-bodymedium md:text-bodylarge font-semibold md:font-semibold mt-4">Define</h3>
+            <p className="text-[14px] md:text-bodysmall font-regular md:font-medium text-gray-600 mt-2 max-w-[220px]">
                 Identified core problems and pain points affecting the current workflow.
             </p>
           </div> 
@@ -222,8 +222,8 @@ export default function TradeFinance() {
             <div className="relative z-10 flex items-center justify-center">
               <img src="/Icons/Design.svg" className="w-24" />
             </div>
-            <h3 className="text-bodylarge font-semibold mt-4">Design</h3>
-            <p className="text-bodysmall text-gray-600 mt-2 max-w-[220px]">
+            <h3 className="text-bodymedium md:text-bodylarge font-semibold md:font-semibold mt-4">Design</h3>
+            <p className="text-[14px] md:text-bodysmall font-regular md:font-medium text-gray-600 mt-2 max-w-[220px]">
                 Created low to high-fidelity wireframes and interactive prototypes in Figma.
             </p>
           </div> 
@@ -232,8 +232,8 @@ export default function TradeFinance() {
             <div className="relative z-10 flex items-center justify-center">
               <img src="/Icons/Refine.svg" className="w-24" />
             </div>
-            <h3 className="text-bodylarge font-semibold mt-4">Refine</h3>
-            <p className="text-bodysmall text-gray-600 mt-2 max-w-[220px]">
+            <h3 className="text-bodymedium md:text-bodylarge font-semibold md:font-semibold mt-4">Refine</h3>
+            <p className="text-[14px] md:text-bodysmall font-regular md:font-medium text-gray-600 mt-2 max-w-[220px]">
                 Validated flows with stakeholders and made improvements based on feedback.
             </p>
           </div>  
@@ -243,15 +243,15 @@ export default function TradeFinance() {
 
       {/* User Persona */}
       <section className="mb-24">
-        <h2 className="text-h5 font-bold mb-4">User Persona</h2>
+        <h2 className="text-h5 md:text-h4 font-bold md:font-bold mb-4">User Persona</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="p-4 flex flex-col gap-3 border border-gray-300 rounded-lg">
             <img
               src="/images/Bank Employee Energy Low.png"
               alt="Frustrated User Image"
-              className="w-full h-[421px] object-cover"
+              className="w-full h-[270px] md:h-[421px] object-cover"
             />
-            <p className="text-bodymedium font-medium">
+            <p className="text-bodysmall md:text-bodymedium font-medium md:font-medium">
               “We get so many manual requests, it’s tiring and error-prone.”
             </p>
             <div className="flex flex-col">
@@ -264,14 +264,14 @@ export default function TradeFinance() {
             <img
               src="/images/Bank Employee Tired.png"
               alt="Frustrated User Image"
-              className="w-full h-[421px] object-cover"
+              className="w-full h-[270px] md:h-[421px] object-cover"
             />
-            <p className="text-bodymedium font-medium">
-              “We get so many manual requests, it’s tiring and error-prone.”
+            <p className="text-bodysmall md:text-bodymedium font-medium md:font-medium">
+              “Sometimes I waste hours just trying to find the right document among hundreds.”
             </p>
             <div className="flex flex-col">
-              <p className="text-bodysmall font-semibold">Adithyan M</p>
-              <p className="text-[14px]">Support Team Member</p>
+              <p className="text-bodysmall font-semibold">Nazrin A</p>
+              <p className="text-[14px]">Operations Staff, Trade Finance Department</p>
             </div>
           </div>
         </div>
@@ -279,12 +279,12 @@ export default function TradeFinance() {
 
       {/* Solution Overview (Abstracted Wireframes) */}
       <section className="mb-24">
-        <h2 className="text-h5 font-bold mb-4">
+        <h2 className="text-h5 md:text-h4 font-bold md:font-bold mb-4">
           Solution Overview (Abstracted Wireframes)
         </h2>
 
         <div className="flex flex-col gap-4">
-          <p className="text-black text-bodymedium font-medium">
+          <p className="text-black text-bodysmall md:text-bodymedium font-medium md:font-medium">
             To protect sensitive business information, these wireframes have
             been recreated with placeholder content and anonymized data while
             retaining the overall structure and interaction flow.
@@ -294,7 +294,7 @@ export default function TradeFinance() {
           </p>
 
           <div className="flex flex-col gap-2 mb-6">
-            <div className="relative w-full h-[690px]">
+            <div className="relative w-full h-[262px] md:h-[690px]">
               <Image
                 src="/images/Trade Screen 1.png"
                 alt="An image of an Employee being frustrated with his office works"
@@ -302,7 +302,7 @@ export default function TradeFinance() {
                 className="rounded-xl object-cover"
               />
             </div>
-            <p className="text-bodysmall font-medium">
+            <p className="text-bodysmall md:text-bodymedium font-medium md:font-medium">
               <b>Compact data presentation</b> — large datasets shown without
               overwhelming the user.
               <br /> <b>Sticky filters and sort options</b> — speed up record
@@ -313,7 +313,7 @@ export default function TradeFinance() {
           </div>
 
           <div className="flex flex-col gap-2 mb-6">
-            <div className="relative w-full h-[971px]">
+            <div className="relative w-full h-[374px] md:h-[971px]">
               <Image
                 src="/images/Trade Screen 2.png"
                 alt="An image of an Employee being frustrated with his office works"
@@ -321,7 +321,7 @@ export default function TradeFinance() {
                 className="rounded-xl object-cover"
               />
             </div>
-            <p className="text-bodysmall font-medium">
+            <p className="text-bodysmall md:text-bodymedium font-medium md:font-medium">
               <b>Hybrid input mode</b> — AI auto-fills fields from PDF
               extraction to reduce manual effort.
               <br />
@@ -333,7 +333,7 @@ export default function TradeFinance() {
           </div>
 
           <div className="flex flex-col gap-2 mb-6">
-            <div className="relative w-full h-[678px]">
+            <div className="relative w-full h-[263px] md:h-[678px]">
               <Image
                 src="/images/Trade Screen 3.png"
                 alt="An image of an Employee being frustrated with his office works"
@@ -341,7 +341,7 @@ export default function TradeFinance() {
                 className="rounded-xl object-cover"
               />
             </div>
-            <p className="text-bodysmall font-medium">
+            <p className="text-bodysmall md:text-bodymedium font-medium md:font-medium">
               <b>Focused task environment</b> — shows only relevant bill details
               without leaving the page.
               <br />
@@ -356,7 +356,7 @@ export default function TradeFinance() {
 
       {/* Impacts */}
       <section className="mb-24">
-        <h2 className="text-h5 font-bold mb-4">Impacts We Created</h2>
+        <h2 className="text-h5 md:text-h4 font-bold md:font-bold mb-4">Impacts We Created</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <ImpactCard
             imageSrc="/images/badge.png"
@@ -400,8 +400,8 @@ export default function TradeFinance() {
       {/* Reflections */}
       <section className="mb-24">
         <div className="flex flex-col gap-4">
-          <h2 className="text-h5 font-bold">Reflections & Learnings</h2>
-          <ul className="list-disc pl-6 text-bodymedium font-medium">
+          <h2 className="text-h5 md:text-h4 font-bold md:font-bold">Reflections & Learnings</h2>
+          <ul className="list-disc pl-6 text-bodysmall md:text-bodymedium font-medium md:font-medium">
             <li>
               Banking UX demands <b>clarity, hierarchy, and minimalism</b>
             </li>
@@ -415,9 +415,9 @@ export default function TradeFinance() {
 
       {/* What I Learned & What’s Next */}
       <section className="mb-24">
-        <h2 className="text-h4 font-bold mb-4">What’s Next</h2>
-        <p className="text-bodymedium font-medium">We plan to:</p>
-        <ul className="list-disc pl-6 text-bodymedium font-medium">
+        <h2 className="text-h5 md:text-h4 font-bold md:font-bold mb-4">What’s Next</h2>
+        <p className="text-bodysmall md:text-bodymedium font-medium md:font-medium">We plan to:</p>
+        <ul className="list-disc pl-6 text-bodysmall md:text-bodymedium font-medium md:font-medium">
           <li>
             Conduct more in-depth usability tests with diverse banking
             professionals to uncover hidden workflow pain points.
@@ -449,7 +449,7 @@ export default function TradeFinance() {
 
       {/* Explore Other */}
       <section className="mb-24">
-        <h2 className="text-center text-h5 font-semibold mb-6">
+        <h2 className="text-center text-h5 md:text-h4 font-bold md:font-bold mb-6">
           Explore My Other Case Studies
         </h2>
 
@@ -464,7 +464,7 @@ export default function TradeFinance() {
               />
             </div>
 
-            <p className="text-bodymedium font-semibold mb-4">
+            <p className="text-bodysmall md:text-bodymedium font-semibold md:font-semibold mb-4">
               Rise of a Volunteer Management App
             </p>
 
@@ -483,7 +483,7 @@ export default function TradeFinance() {
               />
             </div>
 
-            <p className="text-bodymedium font-semibold mb-4">
+            <p className="text-bodysmall md:text-bodymedium font-semibold md:font-semibold mb-4">
               Crafting Ospyn’s First Design System
             </p>
 
@@ -502,7 +502,7 @@ export default function TradeFinance() {
               />
             </div>
 
-            <p className="text-bodymedium font-semibold mb-4">
+            <p className="text-bodysmall md:text-bodymedium font-semibold md:font-semibold mb-4">
               Learning from Learners: A UX Story
             </p>
 

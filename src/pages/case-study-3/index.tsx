@@ -26,10 +26,10 @@ export default function LearningFromLearners() {
           <PenNibStraightIcon size={20} weight="duotone" />
           In-House Project
         </span>
-        <h1 className="text-h4 font-bold mt-3">
+        <h1 className="text-h5 md:text-h4 font-bold md:font-bold mt-3">
           Learning from Learners: A UX Story
         </h1>
-        <p className="text-bodymedium font-regular mt-1 text-gray-600">
+        <p className="text-bodysmall md:text-bodymedium font-regular mt-1 text-gray-600">
           How listening to students shaped the redesign of a video-based
           learning app.
         </p>
@@ -39,24 +39,24 @@ export default function LearningFromLearners() {
       <section className="mb-16">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           <div className="flex flex-col gap-2">
-            <p className="font-semibold text-bodymedium">Role</p>
-            <p className="text-bodysmall">Research, UI/UX Designer</p>
+            <p className="font-semibold md:font-semibold text-bodysmall md:text-bodymedium">Role</p>
+            <p className="text-[14px] md:text-bodysmall">Research, UI/UX Designer</p>
           </div>
           <div className="flex flex-col gap-2">
-            <p className="font-semibold text-bodymedium">Team</p>
-            <p className="text-bodysmall">
+            <p className="font-semibold md:font-semibold text-bodysmall md:text-bodymedium">Team</p>
+            <p className="text-[14px] md:text-bodysmall">
               Nikhil Mohan (Me),
               <br />
               Abhijith S Babu (Technical Lead)
             </p>
           </div>
           <div className="flex flex-col gap-2">
-            <p className="font-semibold text-bodymedium">Timeline</p>
-            <p className="text-bodysmall">Aug 2023 - Oct 2023</p>
+            <p className="font-semibold md:font-semibold text-bodysmall md:text-bodymedium">Timeline</p>
+            <p className="text-[14px] md:text-bodysmall">Aug 2023 - Oct 2023</p>
           </div>
           <div className="flex flex-col gap-2">
-            <p className="font-semibold text-bodymedium">Project Type</p>
-            <p className="text-bodysmall">
+            <p className="font-semibold md:font-semibold text-bodysmall md:text-bodymedium">Project Type</p>
+            <p className="text-[14px] md:text-bodysmall">
               In-house Project
               <br />
               Mobile App
@@ -71,7 +71,7 @@ export default function LearningFromLearners() {
 
       {/* Problem Section */}
       <section className="mb-24">
-        <div className="relative w-full h-[378px] mb-12">
+        <div className="relative w-full h-[200px] md:h-[378px] mb-12">
           <Image
             src="/images/Learning App Impact.png"
             alt="Impacts we created screen"
@@ -81,13 +81,13 @@ export default function LearningFromLearners() {
         </div>
 
         <div className="flex flex-col gap-4">
-          <h2 className="text-h5 font-bold">
+          <h2 className="text-h5 md:text-h4 font-bold md:font-bold">
             Why We Had to Rethink Our Learning App?
           </h2>
-          <p className="text-black text-bodymedium font-medium">
+          <p className="text-black text-bodysmall md:text-bodymedium font-medium md:font-medium">
             When we first launched the app, our goal was focused and clear:
           </p>
-          <div className="relative w-full h-[450px]">
+          <div className="relative w-full h-[200px] md:h-[450px]">
             <Image
               src="/images/Ed-Gaadi Banner.png"
               alt="Ed-Gaadi Banner"
@@ -95,7 +95,7 @@ export default function LearningFromLearners() {
               className="rounded-xl object-cover"
             />
           </div>
-          <p className="text-black text-bodymedium font-medium">
+          <p className="text-black text-bodysmall md:text-bodymedium font-medium md:font-medium">
             We curated crisp, exam-ready video lessons that helped students
             study smarter — especially during high-pressure exam seasons. And it
             worked. We crossed 500+ paying users within a short time, many of
@@ -116,9 +116,9 @@ export default function LearningFromLearners() {
 
       {/* User Needs Section */}
       <section className="mb-24">
-        <h2 className="text-h5 font-bold mb-4">What Users Really Needed?</h2>
+        <h2 className="text-h5 md:text-h4 font-bold md:font-bold mb-4">What Users Really Needed?</h2>
         <div className="flex flex-col gap-4">
-          <p className="text-black text-bodymedium font-medium">
+          <p className="text-black text-bodysmall md:text-bodymedium font-medium md:font-medium">
             We spoke with some of our long-time learners to better understand
             how they use the app — and what was getting in their way.
             <br />
@@ -152,7 +152,7 @@ export default function LearningFromLearners() {
               subtitle="College of Engineering Trivandrum, Kerala"
             />
           </div>
-          <p className="text-black text-bodymedium font-medium">
+          <p className="text-black text-bodysmall md:text-bodymedium font-medium md:font-medium">
             These weren’t edge cases. They reflected deeper friction points we
             hadn’t yet solved.
           </p>
@@ -162,8 +162,8 @@ export default function LearningFromLearners() {
       {/* What We Found in Our Audit */}
       <section className="mb-24">
         <div className="flex flex-col gap-4">
-          <h2 className="text-h5 font-bold">What We Found in Our Audit</h2>
-          <p className="text-black text-bodymedium font-medium">
+          <h2 className="text-h5 md:text-h4 font-bold md:font-bold">What We Found in Our Audit</h2>
+          <p className="text-black text-bodysmall md:text-bodymedium font-medium md:font-medium">
             Before sketching even a single wireframe, we started with a deep
             audit of the app’s current state — layout by layout, screen by
             screen.
@@ -176,27 +176,27 @@ export default function LearningFromLearners() {
           </p>
           <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8 justify-between">
             <div className="flex flex-col gap-4">
-              <p className="flex items-center gap-2 px-2 py-2 bg-red-500 text-white text-bodysmall font-medium border border-neutral-200 rounded-full">
+              <p className="flex items-center gap-2 px-2 py-2 bg-red-500 text-white text-[14px] md:text-bodysmall font-medium md:font-medium border border-neutral-200 rounded-full">
                 <SmileySadIcon size={24} />
                 No way to quickly resume learning after exiting the app
               </p>
-              <p className="flex items-center gap-2 px-2 py-2 bg-red-500 text-white text-bodysmall font-medium border border-neutral-200 rounded-full">
+              <p className="flex items-center gap-2 px-2 py-2 bg-red-500 text-white text-[14px] md:text-bodysmall font-medium md:font-medium border border-neutral-200 rounded-full">
                 <SmileySadIcon size={24} />
                 No ready-made notes or summaries
               </p>
-              <p className="flex items-center gap-2 px-2 py-2 bg-red-500 text-white text-bodysmall font-medium border border-neutral-200 rounded-full">
+              <p className="flex items-center gap-2 px-2 py-2 bg-red-500 text-white text-[14px] md:text-bodysmall font-medium md:font-medium border border-neutral-200 rounded-full">
                 <SmileySadIcon size={24} />
                 Topic discovery was painful, long scrolls, unclear hierarchy
               </p>
-              <p className="flex items-center gap-2 px-2 py-2 bg-red-500 text-white text-bodysmall font-medium border border-neutral-200 rounded-full">
+              <p className="flex items-center gap-2 px-2 py-2 bg-red-500 text-white text-[14px] md:text-bodysmall font-medium md:font-medium border border-neutral-200 rounded-full">
                 <SmileySadIcon size={24} />
                 No practice content to reinforce learning
               </p>
-              <p className="flex items-center gap-2 px-2 py-2 bg-red-500 text-white text-bodysmall font-medium border border-neutral-200 rounded-full">
+              <p className="flex items-center gap-2 px-2 py-2 bg-red-500 text-white text-[14px] md:text-bodysmall font-medium md:font-medium border border-neutral-200 rounded-full">
                 <SmileySadIcon size={24} />
                 Lack of motivation to continue after each video
               </p>
-              <p className="flex items-center gap-2 px-2 py-2 bg-red-500 text-white text-bodysmall font-medium border border-neutral-200 rounded-full">
+              <p className="flex items-center gap-2 px-2 py-2 bg-red-500 text-white text-[14px] md:text-bodysmall font-medium md:font-medium border border-neutral-200 rounded-full">
                 <SmileySadIcon size={24} />
                 Zero personalization based on user habits or course focus
               </p>
@@ -214,8 +214,8 @@ export default function LearningFromLearners() {
 
       {/* Design Objectives */}
       <section className="mb-24">
-        <h2 className="text-h5 font-bold mb-4">Our Design Objectives</h2>
-          <p className="text-black text-bodymedium font-medium">
+        <h2 className="text-h5 md:text-h4 font-bold md:font-bold mb-4">Our Design Objectives</h2>
+          <p className="text-black text-bodysmall md:text-bodymedium font-medium md:font-medium">
             "We’re not redesigning for the sake of aesthetics — we’re
             redesigning to help students learn better, faster, and with less
             friction."
@@ -223,10 +223,10 @@ export default function LearningFromLearners() {
         <div className="flex flex-col gap-10">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10 justify-center items-center">
             <div className="flex flex-col gap-1">
-              <h3 className="text-bodymedium font-bold">Better Content Discovery</h3>
-              <p className="text-bodymedium text-[#737373]">With categorized modules and better visual hierarchy, users found the topics they needed without friction.</p>
+              <h3 className="text-bodysmall md:text-bodymedium font-bold md:font-bold">Better Content Discovery</h3>
+              <p className="text-[14px] md:text-bodysmall text-[#737373]">With categorized modules and better visual hierarchy, users found the topics they needed without friction.</p>
             </div>
-            <div className="relative w-full h-[678px]">
+            <div className="relative w-full h-[852px] md:h-[678px]">
               <Image
                 src="/images/Learning Screen 1.png"
                 alt="Mockup Screen"
@@ -235,13 +235,13 @@ export default function LearningFromLearners() {
               />
             </div>
             <div className="flex flex-col gap-1">
-              <h3 className="text-bodymedium font-bold">Increased Video Completion Rate</h3>
-              <p className="text-bodymedium text-[#737373]">With resume support, structured content, and added notes, more users completed their videos without dropping off midway.</p>
+              <h3 className="text-bodysmall md:text-bodymedium font-bold md:font-bold">Increased Video Completion Rate</h3>
+              <p className="text-[14px] md:text-bodysmall text-[#737373]">With resume support, structured content, and added notes, more users completed their videos without dropping off midway.</p>
             </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10 justify-center items-center">
-            <div className="relative w-full h-[678px]">
+            <div className="relative w-full h-[852px] md:h-[678px]">
               <Image
                 src="/images/Learning Screen 2.png"
                 alt="Mockup Screen"
@@ -250,10 +250,10 @@ export default function LearningFromLearners() {
               />
             </div>
             <div>
-              <h3 className="text-bodymedium font-bold">Reduced Learning Time by 20%</h3>
-              <p className="text-bodymedium text-[#737373]">Thanks to direct access to summarized notes and timestamped explanations.</p>
+              <h3 className="text-bodysmall md:text-bodymedium font-bold md:font-bold">Reduced Learning Time by 20%</h3>
+              <p className="text-[14px] md:text-bodysmall text-[#737373]">Thanks to direct access to summarized notes and timestamped explanations.</p>
             </div>
-            <div className="relative w-full h-[678px]">
+            <div className="relative w-full h-[852px] md:h-[678px]">
               <Image
                 src="/images/Learning Screen 3.png"
                 alt="Mockup Screen"
@@ -265,10 +265,10 @@ export default function LearningFromLearners() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10 justify-center items-center">
             <div className="flex flex-col gap-1">
-              <h3 className="text-bodymedium font-bold">Increase Focus and Reduce Visual Noise</h3>
-              <p className="text-bodymedium text-[#737373]">Apply better spacing, alignment, and contrast for more readable screens — especially for long study sessions.</p>
+              <h3 className="text-bodysmall md:text-bodymedium font-bold md:font-bold">Increase Focus and Reduce Visual Noise</h3>
+              <p className="text-[14px] md:text-bodysmall text-[#737373]">Apply better spacing, alignment, and contrast for more readable screens — especially for long study sessions.</p>
             </div>
-            <div className="relative w-full h-[678px]">
+            <div className="relative w-full h-[852px] md:h-[678px]">
               <Image
                 src="/images/Learning Screen 4.png"
                 alt="Mockup Screen"
@@ -277,17 +277,17 @@ export default function LearningFromLearners() {
               />
             </div>
             <div className="flex flex-col gap-1">
-              <h3 className="text-bodymedium font-bold">Increase Focus and Reduce Visual Noise</h3>
-              <p className="text-bodymedium text-[#737373]">Apply better spacing, alignment, and contrast for more readable screens — especially for long study sessions.</p>
+              <h3 className="text-bodysmall md:text-bodymedium font-bold md:font-bold">Increase Focus and Reduce Visual Noise</h3>
+              <p className="text-[14px] md:text-bodysmall text-[#737373]">Apply better spacing, alignment, and contrast for more readable screens — especially for long study sessions.</p>
             </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10 justify-center items-center">
             <div className="flex flex-col gap-1">
-              <h3 className="text-bodymedium font-bold">Higher Engagement in Practice Quizzes</h3>
-              <p className="text-bodymedium text-[#737373]">Learners began exploring quiz sections immediately after videos — many requested more modules with interactive assessments.</p>
+              <h3 className="text-bodysmall md:text-bodymedium font-bold md:font-bold">Higher Engagement in Practice Quizzes</h3>
+              <p className="text-[14px] md:text-bodysmall text-[#737373]">Learners began exploring quiz sections immediately after videos — many requested more modules with interactive assessments.</p>
             </div>
-            <div className="relative w-full h-[678px]">
+            <div className="relative w-full h-[852px] md:h-[678px]">
               <Image
                 src="/images/Learning Screen 5.png"
                 alt="Mockup Screen"
@@ -296,8 +296,8 @@ export default function LearningFromLearners() {
               />
             </div>
             <div className="flex flex-col gap-1">
-              <h3 className="text-bodymedium font-bold">Reduce Drop-Offs</h3>
-              <p className="text-bodymedium text-[#737373]">Use visual progress trackers to provide learners with a clear sense of achievement, encouraging them to return and complete their learning journey.</p>
+              <h3 className="text-bodysmall md:text-bodymedium font-bold md:font-bold">Reduce Drop-Offs</h3>
+              <p className="text-[14px] md:text-bodysmall text-[#737373]">Use visual progress trackers to provide learners with a clear sense of achievement, encouraging them to return and complete their learning journey.</p>
             </div>
           </div>        
 
@@ -306,7 +306,7 @@ export default function LearningFromLearners() {
 
       {/* Impacts */}
       <section className="mb-24">
-        <h2 className="text-h5 font-bold mb-4">Impacts We Created</h2>
+        <h2 className="text-h5 md:text-h4 font-bold md:font-bold mb-4">Impacts We Created</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <ImpactCard
             imageSrc="/images/badge.png"
@@ -338,8 +338,8 @@ export default function LearningFromLearners() {
       {/* Reflections */}
       <section className="mb-24">
         <div className="flex flex-col gap-4">
-          <h2 className="text-h5 font-bold">Reflections & Learnings</h2>
-          <ul className="list-disc pl-6 text-bodymedium font-medium">
+          <h2 className="text-h5 md:text-h4 font-bold md:font-bold">Reflections & Learnings</h2>
+          <ul className="list-disc pl-6 text-bodysmall md:text-bodymedium font-medium md:font-medium">
             <li>
               <b>User Needs</b> &gt; Feature Wishlist
             </li>
@@ -364,9 +364,9 @@ export default function LearningFromLearners() {
 
       {/* What I Learned & What’s Next */}
       <section className="mb-24">
-        <h2 className="text-h4 font-bold mb-4">What’s Next</h2>
-        <p className="text-bodymedium font-medium">We plan to:</p>
-        <ul className="list-disc pl-6 text-bodymedium font-medium">
+        <h2 className="text-h5 md:text-h4 font-bold md:font-bold mb-4">What’s Next</h2>
+        <p className="text-bodysmall md:text-bodymedium font-medium md:font-medium">We plan to:</p>
+        <ul className="list-disc pl-6 text-bodysmall md:text-bodymedium font-medium md:font-medium">
           <li>
             <b>Introduce Gamification elements</b> like streaks, badges, and
             peer leaderboard
@@ -394,7 +394,7 @@ export default function LearningFromLearners() {
 
       {/* Explore Other */}
       <section className="mb-24">
-        <h2 className="text-center text-h5 font-semibold mb-6">
+        <h2 className="text-center text-h5 md:text-h4 font-bold md:font-bold mb-6">
           Explore My Other Case Studies
         </h2>
 
@@ -409,7 +409,7 @@ export default function LearningFromLearners() {
               />
             </div>
 
-            <p className="text-bodymedium font-semibold mb-4">
+            <p className="font-semibold md:font-semibold text-bodysmall md:text-bodymedium mb-4">
               Rise of a Volunteer Management App
             </p>
 
@@ -429,7 +429,7 @@ export default function LearningFromLearners() {
               />
             </div>
 
-            <p className="text-bodymedium font-semibold mb-4">
+            <p className="font-semibold md:font-semibold text-bodysmall md:text-bodymedium mb-4">
               Crafting Ospyn’s First Design System
             </p>
             
@@ -448,7 +448,7 @@ export default function LearningFromLearners() {
               />
             </div>
 
-            <p className="text-bodymedium font-semibold mb-4">
+            <p className="font-semibold md:font-semibold text-bodysmall md:text-bodymedium mb-4">
               A UX Journey in the Banking Sector
             </p>
 

@@ -77,7 +77,7 @@ export default function VolunteerApp() {
 
       {/* Problem Section */}
       <section className="mb-24">
-        <div className="relative w-full h-[378px] mb-10">
+        <div className="relative w-full h-[200px] md:h-[378px] mb-10">
           <Image
             src="/images/Volunteer App Impact.png"
             alt="Impacts we created screen"
@@ -265,7 +265,7 @@ export default function VolunteerApp() {
               to polished high-fidelity UIs, testing with real users at every
               stage.
             </p>
-            <div className="relative w-full h-[535px] mt-3">
+            <div className="relative w-full h-[200px] md:h-[535px] mt-3">
               <Image
                 src="/images/Mid-High-Fi.png"
                 alt="Wireframe to High Fidelity Design"
@@ -350,7 +350,7 @@ export default function VolunteerApp() {
         </h2>
         <div className="flex flex-col gap-8">
           
-          <div className="relative w-full h-[616px]">
+          <div className="relative w-full h-[238px] md:h-[616px]">
             <Image
               src="/images/Screen1.png"
               alt="Mockup Screen"
@@ -359,7 +359,7 @@ export default function VolunteerApp() {
             />
           </div>
 
-          <div className="relative w-full h-[616px]">
+          <div className="relative w-full h-[238px] md:h-[616px]">
             <Image
               src="/images/Screen2.png"
               alt="Mockup Screen"
@@ -368,7 +368,7 @@ export default function VolunteerApp() {
             />
           </div>
 
-          <div className="relative w-full h-[616px]">
+          <div className="relative w-full h-[238px] md:h-[616px]">
             <Image
               src="/images/Screen3.png"
               alt="Mockup Screen"
@@ -377,7 +377,7 @@ export default function VolunteerApp() {
             />
           </div>
 
-          <div className="relative w-full h-[616px]">
+          <div className="relative w-full h-[238px] md:h-[616px]">
             <Image
               src="/images/Screen4.png"
               alt="Mockup Screen"
@@ -386,7 +386,7 @@ export default function VolunteerApp() {
             />
           </div>
 
-          <div className="relative w-full h-[616px]">
+          <div className="relative w-full h-[238px] md:h-[616px]">
             <Image
               src="/images/Screen5.png"
               alt="Mockup Screen"
