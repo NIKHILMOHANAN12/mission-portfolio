@@ -371,3 +371,21 @@ background-clip: text;
   mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
   -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
 }
+
+/* Cloud fade mask */
+.cloud-mask {
+  background: white;
+
+  /* Soft circular cloud fade */
+  -webkit-mask-image: radial-gradient(circle, black 20%, transparent 70%);
+  mask-image: radial-gradient(circle, black 20%, transparent 70%);
+
+  /* We animate this through "--maskSize" variable */
+  -webkit-mask-size: var(--maskSize, 20%);
+  mask-size: var(--maskSize, 20%);
+
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+}

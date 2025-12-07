@@ -11,6 +11,7 @@ import Image from "next/image";
 import Services from "@/components/services";
 import WorksShowcase from "@/components/WorksShowcase";
 import Reveal from "@/components/Reveal";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
       <Head>
         <title>Portfolio by Nikhil Mohan</title>
         <meta name="description" content="Nikhil Mohan Portfolio" />
-       </Head>
+      </Head>
 
       <section
         data-theme="light"
@@ -26,7 +27,11 @@ export default function Home() {
       >
         <div className="cloudLoop"></div>
         <div className="h-screen w-full overflow-hidden">
-          <Image className="h-full w-full object-cover cloud-fade" src={homeImg} alt="An Image of a character named Ethan Hunt from the film named Mission Impossible, diving from the mountains" />
+          <Image
+            className="h-full w-full object-cover cloud-fade"
+            src={homeImg}
+            alt="An Image of a character named Ethan Hunt from the film named Mission Impossible, diving from the mountains"
+          />
         </div>
         <div className="absolute top-0  w-full h-full">
           <div className="max-w-6xl mx-auto h-full flex justify-center items-center px-6 py-16 space-y-10 ">
@@ -35,12 +40,28 @@ export default function Home() {
                 <Image src={manImg} alt="Ethan Hunt" />
               </div>
               <div className="relative z-10">
-                <h1 className="font-zuume text-white text-[24px] sm:text-[44px]  md:text-[64px]  lg:text-[px] leading-tight lg:leading-none">
+                {/* <h1 className="font-zuume text-white text-[24px] sm:text-[44px]  md:text-[64px]  lg:text-[px] leading-tight lg:leading-none">
                   “When clean design feels incomplete,
                   <span className="block text-red-600">
                     that's when I drop in"
                   </span>
-                </h1>
+                </h1> */}
+                <motion.h1
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1, ease: "easeOut" }}
+                  className="font-zuume text-white text-[24px] sm:text-[44px] md:text-[64px] leading-tight lg:leading-none"
+                >
+                  “When clean design feels incomplete,
+                  <motion.span
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.15, ease: "easeOut" }}
+                    className="block text-red-600"
+                  >
+                    {"that's when I drop in"}
+                  </motion.span>
+                </motion.h1>
               </div>
               <div className="animate-bounce flex justify-center w-[225px] mx-auto">
                 <Image src={bikeImg} alt="Bike" />

@@ -80,9 +80,9 @@ const Header = () => {
             <Menu size={30} />
           </button>
 
-          {/* <div className="mt-8">
+          <div className="mt-8 hidden md:block">
           <OpenToWorkTag />
-        </div> */}
+        </div>
         </div>
       </header>
 

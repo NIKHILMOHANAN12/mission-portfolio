@@ -6,6 +6,7 @@ import ToolsSection from "@/components/Toolstack";
 import ToolStack from "@/components/Toolstack";
 import { MagicWandIcon } from "@phosphor-icons/react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function About() {
   return (
@@ -18,12 +19,59 @@ export default function About() {
           {/* Background Image */}
           <div className="absolute inset-0">
             <Image
-              src="/images/Nikhil Hero.jpg"
+              src="/images/About-Cover.jpg"
               alt="Background"
-              layout="fill"
-              objectFit="cover"
-              className="z-0"
+              fill
+              className="object-cover z-0"
             />
+          </div>
+
+          <div className="absolute bottom-0 left-0 w-full h-[250px] bg-gradient-to-b from-transparent to-[#0E100F] z-[2]" />
+
+          <div className="hidden md:flex items-center gap-4 text-left absolute left-8 max-w-sm text-[#f7eecf] z-10">
+            <motion.span
+              initial={{ opacity: 0, scale: 0.8, y: -15 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              transition={{ duration: 0.9, ease: "easeOut" }}
+              className="text-[94px] leading-none font-bold"
+            >
+              {`{`}
+            </motion.span>
+            <motion.p
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1.0, delay: 0.2, ease: "easeOut" }}
+              className="text-bodymedium font-semibold leading-[1.25]"
+            >
+              “An Engineer turned
+              <br />
+              Designer from south
+              <br />
+              side of Kerala”
+            </motion.p>
+          </div>
+
+          <div className="hidden md:flex items-center gap-4 text-right absolute right-8 max-w-sm text-[#f7eecf] z-10">
+            <motion.p
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1.0, delay: 0.2, ease: "easeOut" }}
+              className="text-bodymedium font-semibold leading-[1.25]"
+            >
+              Now I’m ready, sleeves
+              <br />
+              rolled and mind fresh,
+              <br />
+              to work with you.
+            </motion.p>
+            <motion.span
+              initial={{ opacity: 0, scale: 0.8, y: -15 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              transition={{ duration: 0.9, ease: "easeOut" }}
+              className="text-[94px] leading-none font-bold"
+            >
+              {`}`}
+            </motion.span>
           </div>
         </section>
 

@@ -136,7 +136,7 @@ export default function OpenToWork() {
             
 
               <div className="mt-2 text-bodysmall text-gray-500">
-                or connect via
+                or via
                   <a href="https://www.linkedin.com/in/nikhil-mohann" target="_blank" rel="noopener noreferrer" className="font-semibold text-blue-500 text-bodysmall"> LinkedIn</a>
               </div>
             </div>
