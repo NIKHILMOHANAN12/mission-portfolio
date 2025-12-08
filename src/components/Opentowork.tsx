@@ -99,7 +99,7 @@ export default function OpenToWork() {
 
             <div className="absolute top-6 right-6 z-10">
               <button
-                onClick={() => setIsOpen(false)}
+                onClick={closePopup}
                 className="text-gray-50 hover:text-gray-300"
               >
                 <XCircleIcon size={28} weight="fill" />

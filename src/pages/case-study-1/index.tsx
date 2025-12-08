@@ -264,9 +264,9 @@ export default function DesignSystem() {
             The final piece? Storybook.
           </p>
 
-          <div className="relative w-full h-[628px] mt-6">
+          <div className="relative w-full h-[260px] md:h-[628px] mt-6">
             <Image
-              src="/images/new.png"
+              src="/images/Storybook.png"
               alt="Figma Variant Component Feature"
               fill
               className="rounded-xl object-cover"

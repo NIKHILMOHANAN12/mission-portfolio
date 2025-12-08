@@ -7,7 +7,7 @@ import { SmoothCursor } from "@/components/ui/smooth-cursor";
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
-      <SmoothCursor />
+      {/* <SmoothCursor /> */}
       <div>
         <Header/>
         <main>
