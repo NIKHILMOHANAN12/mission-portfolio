@@ -14,9 +14,12 @@
   }
 }
 
-html {
-  scroll-behavior: smooth;
-}
+html, body {
+      overflow-x: hidden !important;
+      width: 100%;
+    }
+
+
 @layer base {
   body {
     @apply font-manrope;
@@ -89,8 +92,7 @@ html {
   opacity: 0.35; /* softer effect */
 }
 
-/* font-family: 'Montserrat', sans-serif; */
-/* @apply font-opensans; */
+
 
 * {
   box-sizing: border-box;
@@ -109,6 +111,14 @@ a {
 
 body {
   color: #171717;
+}
+
+.text-gradient {
+  background: linear-gradient(to bottom right, #ffffff, #999999);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
 }
 
 @keyframes bounce {
@@ -322,18 +332,7 @@ background-clip: text;
   position: absolute;
   bottom: 0;
   transform-origin: 50% 100% 0px;
-
-  /* 🔥 Smooth animation */
-  /* transition: transform 0.6s cubic-bezier(0.25, 1, 0.3, 1),
-    box-shadow 0.3s ease-in-out; */
 }
-
-/* .framerBlock03:hover {
-  transform: perspective(2500px) rotateX(-65deg);
-  box-shadow: rgb(255, 255, 255) 0px 0 0px 0px inset;
-  will-change: transform;
-  transform-origin: 50% 100% 0px;
-} */
 
 .transform-style-preserve-3d {
   transform-style: preserve-3d;

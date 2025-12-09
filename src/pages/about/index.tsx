@@ -14,64 +14,86 @@ export default function About() {
       <main className="bg-[#0E100F]">
         <section
           data-theme="dark"
-          className="relative flex flex-col items-center justify-center min-h-screen px-6 md:px-12 lg:px-24"
+          className="w-full h-screen bg-[#000000] text-white flex flex-col items-center justify-center px-4 py-20"
         >
-          {/* Background Image */}
-          <div className="absolute inset-0">
-            <Image
-              src="/images/About-Cover.jpg"
-              alt="Background"
-              fill
-              className="object-cover z-0"
-            />
-          </div>
+        
 
           <div className="absolute bottom-0 left-0 w-full h-[250px] bg-gradient-to-b from-transparent to-[#0E100F] z-[2]" />
 
-          <div className="hidden md:flex items-center gap-4 text-left absolute left-8 max-w-sm text-[#f7eecf] z-10">
-            <motion.span
-              initial={{ opacity: 0, scale: 0.8, y: -15 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              transition={{ duration: 0.9, ease: "easeOut" }}
-              className="text-[94px] leading-none font-bold"
+          <div className="text-center flex flex-col gap-0 mt-8 md:mt-0">
+            <motion.h1
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1.0, delay: 0.2, ease: "easeOut" }}
+              className="text-[32px] md:text-[80px] font-zuume font-bold tracking-wide text-gradient"
             >
-              {`{`}
-            </motion.span>
+              AN ENGINEER TURNED DESIGNER
+            </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.0, delay: 0.2, ease: "easeOut" }}
-              className="text-bodymedium font-semibold leading-[1.25]"
+              className="text-[28px] md:text-[56px] mt-[-40px] tracking-wide font-zuume font-medium text-gradient"
             >
-              “An Engineer turned
-              <br />
-              Designer from south
-              <br />
-              side of Kerala”
+              FROM GOD'S OWN COUNTRY
             </motion.p>
           </div>
 
-          <div className="hidden md:flex items-center gap-4 text-right absolute right-8 max-w-sm text-[#f7eecf] z-10">
-            <motion.p
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.0, delay: 0.2, ease: "easeOut" }}
-              className="text-bodymedium font-semibold leading-[1.25]"
-            >
-              Now I’m ready, sleeves
-              <br />
-              rolled and mind fresh,
-              <br />
-              to work with you.
-            </motion.p>
+          
+
+          {/* ABOUT TEXT SECTION WITH BRACES */}
+          <div className="relative flex items-center gap-2 max-w-4xl text-center mb-4 mt-0 md:mt-[-16px] px-6">
+            {/* LEFT BRACE */}
             <motion.span
               initial={{ opacity: 0, scale: 0.8, y: -15 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               transition={{ duration: 0.9, ease: "easeOut" }}
-              className="text-[94px] leading-none font-bold"
+              className="text-[84px] text-gray-700 hidden sm:block"
+            >
+              {`{`}
+            </motion.span>
+
+            <motion.p
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1.0, delay: 0.2, ease: "easeOut" }}
+              className="text-bodysmall font-medium text-gray-400 leading-[1.4]"
+            >
+              From designing event posters in college to building digital
+              products for startups and enterprises today, I’ve grown into a
+              designer who loves turning complex problems into simple,
+              meaningful experiences. I’m still learning, still growing, and
+              always excited for new challenges ahead.
+            </motion.p>
+
+            {/* RIGHT BRACE */}
+            <motion.span
+              initial={{ opacity: 0, scale: 0.8, y: -15 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              transition={{ duration: 0.9, ease: "easeOut" }}
+              className="text-[84px] text-gray-700 hidden sm:block"
             >
               {`}`}
             </motion.span>
+          </div>
+
+          {/* IMAGE */}
+          <div className="relative w-full flex justify-center">
+            <motion.div
+              className="w-[793px] h-[312px] overflow-hidden border-[4px] rounded-3xl border-white"
+              // Apply the animation properties to the motion.div
+              initial={{ opacity: 0, scale: 0.8, y: -15 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              transition={{ duration: 0.9, ease: "easeOut" }}
+            >
+              <Image
+                src="/images/About-Cover.jpg" // replace with your actual image path
+                alt="Nikhil Mohan"
+                width={793}
+                height={312}
+                className="w-full h-full object-cover"
+              />
+            </motion.div>
           </div>
         </section>
 
