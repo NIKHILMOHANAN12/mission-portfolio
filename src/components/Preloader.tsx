@@ -60,7 +60,7 @@ export default function Preloader({ onFinish }: { onFinish: () => void }) {
                     ? { opacity: 1, "--maskSize": "350%" }
                     : {}
                 }
-                transition={{ duration: 1, ease: "easeOut" }}
+                transition={{ duration: 1, ease: [0, 0, 0.58, 1] }}
               />
             </div>
           </div>

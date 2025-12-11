@@ -7,18 +7,23 @@ import ToolStack from "@/components/Toolstack";
 import { MagicWandIcon } from "@phosphor-icons/react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { Variants } from "framer-motion";
 
 
-const container = {
+const container: Variants = {
   hidden: { opacity: 0, y: 20 },
   show: {
     opacity: 1,
     y: 0,
-    transition: { staggerChildren: 0.15, duration: 0.9, ease: "easeOut" },
+    transition: {
+      staggerChildren: 0.15,
+      duration: 0.9,
+      ease: [0, 0, 0.58, 1],
+    },
   },
 };
 
-const item = {
+const item: Variants = {
   hidden: { opacity: 0, y: 20 },
   show: { opacity: 1, y: 0 },
 };
