@@ -8,94 +8,94 @@ import { MagicWandIcon } from "@phosphor-icons/react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
+
+const container = {
+  hidden: { opacity: 0, y: 20 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { staggerChildren: 0.15, duration: 0.9, ease: "easeOut" },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0, y: 20 },
+  show: { opacity: 1, y: 0 },
+};
+
 export default function About() {
   return (
     <div>
       <main className="bg-[#0E100F]">
         <section
-          data-theme="dark"
-          className="w-full h-screen bg-[#000000] text-white flex flex-col items-center justify-center px-4 py-20"
+      data-theme="dark"
+      className="relative w-full h-screen bg-black text-white flex flex-col items-center justify-center px-4 py-20 overflow-hidden"
+    >
+      {/* Bottom Gradient */}
+      <div className="absolute bottom-0 left-0 w-full h-[250px] bg-gradient-to-b from-transparent to-[#0E100F] z-[2]" />
+
+      <motion.div
+        variants={container}
+        initial="hidden"
+        animate="show"
+        className="flex flex-col items-center text-center mt-16 md:mt-0 z-[3]"
+      >
+        {/* Heading */}
+        <motion.h1
+          variants={item}
+          className="text-[34px] md:text-[72px] font-zuume font-bold w-full tracking-wide text-gradient"
         >
-        
+          AN ENGINEER TURNED DESIGNER
+        </motion.h1>
 
-          <div className="absolute bottom-0 left-0 w-full h-[250px] bg-gradient-to-b from-transparent to-[#0E100F] z-[2]" />
+        <motion.p
+          variants={item}
+          className="text-[28px] md:text-[48px] mt-[-16px] md:mt-[-32px]  font-zuume font-medium w-full text-gradient"
+        >
+          FROM GOD'S OWN COUNTRY
+        </motion.p>
 
-          <div className="text-center flex flex-col gap-0 mt-8 md:mt-0">
-            <motion.h1
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.0, delay: 0.2, ease: "easeOut" }}
-              className="text-[32px] md:text-[80px] font-zuume font-bold tracking-wide text-gradient"
-            >
-              AN ENGINEER TURNED DESIGNER
-            </motion.h1>
-            <motion.p
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.0, delay: 0.2, ease: "easeOut" }}
-              className="text-[28px] md:text-[56px] mt-[-40px] tracking-wide font-zuume font-medium text-gradient"
-            >
-              FROM GOD'S OWN COUNTRY
-            </motion.p>
+        {/* Text with braces */}
+        <motion.div
+          variants={item}
+          className="relative flex items-center gap-2 max-w-4xl text-center mb-6 px-4"
+        >
+          <span className="hidden sm:block text-[70px] text-gray-700">
+            {`{`}
+          </span>
+
+          <p className="text-[14px] md:text-bodysmall font-medium text-gray-400 leading-[1.5]">
+            From designing event posters in college to building digital products
+            for startups and enterprises today, I’ve grown into a designer who
+            loves turning complex problems into simple, meaningful experiences.
+            Still learning, still growing, always ready for the next challenge.
+          </p>
+
+          <span className="hidden sm:block text-[70px] text-gray-700">
+            {`}`}
+          </span>
+        </motion.div>
+
+        {/* Image */}
+        <motion.div
+          variants={item}
+          className="w-full flex justify-center"
+        >
+          <div className="w-[90%] max-w-[780px] h-[300px] overflow-hidden border-4 rounded-3xl border-white">
+            <Image
+              src="/images/About-Cover.jpg"
+              alt="Nikhil Mohan"
+              width={780}
+              height={300}
+              priority
+              placeholder="blur"
+              blurDataURL="/images/About-Cover.jpg"
+              className="w-full h-full object-cover"
+            />
           </div>
-
-          
-
-          {/* ABOUT TEXT SECTION WITH BRACES */}
-          <div className="relative flex items-center gap-2 max-w-4xl text-center mb-4 mt-0 md:mt-[-16px] px-6">
-            {/* LEFT BRACE */}
-            <motion.span
-              initial={{ opacity: 0, scale: 0.8, y: -15 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              transition={{ duration: 0.9, ease: "easeOut" }}
-              className="text-[84px] text-gray-700 hidden sm:block"
-            >
-              {`{`}
-            </motion.span>
-
-            <motion.p
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.0, delay: 0.2, ease: "easeOut" }}
-              className="text-bodysmall font-medium text-gray-400 leading-[1.4]"
-            >
-              From designing event posters in college to building digital
-              products for startups and enterprises today, I’ve grown into a
-              designer who loves turning complex problems into simple,
-              meaningful experiences. I’m still learning, still growing, and
-              always excited for new challenges ahead.
-            </motion.p>
-
-            {/* RIGHT BRACE */}
-            <motion.span
-              initial={{ opacity: 0, scale: 0.8, y: -15 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              transition={{ duration: 0.9, ease: "easeOut" }}
-              className="text-[84px] text-gray-700 hidden sm:block"
-            >
-              {`}`}
-            </motion.span>
-          </div>
-
-          {/* IMAGE */}
-          <div className="relative w-full flex justify-center">
-            <motion.div
-              className="w-[793px] h-[312px] overflow-hidden border-[4px] rounded-3xl border-white"
-              // Apply the animation properties to the motion.div
-              initial={{ opacity: 0, scale: 0.8, y: -15 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              transition={{ duration: 0.9, ease: "easeOut" }}
-            >
-              <Image
-                src="/images/About-Cover.jpg" // replace with your actual image path
-                alt="Nikhil Mohan"
-                width={793}
-                height={312}
-                className="w-full h-full object-cover"
-              />
-            </motion.div>
-          </div>
-        </section>
+        </motion.div>
+      </motion.div>
+    </section>
 
         <Reveal>
           <section

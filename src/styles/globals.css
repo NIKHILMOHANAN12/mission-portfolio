@@ -155,7 +155,7 @@ body {
 }
 
 
-.cloudLoop {
+/* .cloudLoop {
   position: absolute;
   top: 0;
   left: 0;
@@ -190,7 +190,30 @@ body {
     -webkit-transform: translate3d(-50%, 0, 0);
     transform: translate3d(-50%, 0, 0);
   }
+} */
+
+.cloudLoop {
+  position: absolute;
+  inset: 0;
+  width: 200%; /* double width for smoother loop */
+  height: 100%;
+  background: url('/images/cloud.webp') repeat-x;
+  background-size: cover;
+  animation: cloudLoop 60s linear infinite;
+  z-index: 2;
+  pointer-events: none;
+  will-change: transform; /* important! */
 }
+
+@keyframes cloudLoop {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
 
 .navBlock a {
   /* @apply rounded-lg bg-gray-100  transition-transform duration-200 ease-in; */

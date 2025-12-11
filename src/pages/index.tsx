@@ -21,20 +21,38 @@ export default function Home() {
         <meta name="description" content="Nikhil Mohan Portfolio" />
       </Head>
 
-      <Reveal>
         <section
           data-theme="light"
           className="min-h-screen overflow-hidden relative"
         >
+
           <div className="cloudLoop"></div>
-          <div className="h-screen w-full overflow-hidden">
+
+          <div className="absolute inset-0">
             <Image
-              className="h-full w-full object-cover cloud-fade"
               src={homeImg}
-              alt="An Image of a character named Ethan Hunt from the film named Mission Impossible, diving from the mountains"
+              alt="Ethan Hunt Mission Impossible"
+              fill
+              priority
+              sizes="100vw"
+              className="object-cover"
             />
           </div>
-          <div className="absolute top-0  w-full h-full">
+
+          <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-b from-transparent to-white z-[5]" />
+          
+          {/* <div className="cloudLoop"></div>
+          <div className="relative h-screen w-full overflow-hidden">
+            <Image
+              className="object-cover cloud-fade"
+              src={homeImg}
+              priority
+              sizes="100vw"
+              fill
+              alt="An Image of a character named Ethan Hunt from the film named Mission Impossible, diving from the mountains"
+            />
+          </div> */}
+          {/* <div className="absolute top-0  w-full h-full">
             <div className="max-w-6xl mx-auto h-full flex justify-center items-center px-6 py-16 space-y-10 ">
               <div className="text-center space-y-10">
                 <div className="animate-bounce flex justify-center w-[225px] mx-auto">
@@ -63,9 +81,57 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </div> */}
+          <div className="relative z-10 h-screen flex items-center justify-center">
+            <div className="text-center space-y-10">
+              {/* Ethan Hunt */}
+              <motion.div
+                initial={{ y: 0 }}
+                animate={{ y: [-6, 6, -6] }}
+                transition={{
+                  repeat: Infinity,
+                  duration: 2,
+                  ease: "easeInOut",
+                }}
+                className="w-[180px] mx-auto"
+              >
+                <Image src={manImg} alt="Ethan Hunt" />
+              </motion.div>
+
+              {/* Heading */}
+              <motion.h1
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, ease: "easeOut" }}
+                className="font-zuume text-white text-[32px] sm:text-[44px] md:text-[64px] leading-tight"
+              >
+                “When clean design feels incomplete,
+                <motion.span
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: 0.15, ease: "easeOut" }}
+                  className="block text-red-600"
+                >
+                  that's when I drop in
+                </motion.span>
+              </motion.h1>
+
+              {/* Bike */}
+              <motion.div
+                initial={{ y: 0 }}
+                animate={{ y: [-4, 4, -4] }}
+                transition={{
+                  repeat: Infinity,
+                  duration: 2.4,
+                  ease: "easeInOut",
+                }}
+                className="w-[180px] mx-auto"
+              >
+                <Image src={bikeImg} alt="Bike" />
+              </motion.div>
+            </div>
           </div>
         </section>
-      </Reveal>
 
       <Reveal>
         <Intro />
