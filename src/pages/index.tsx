@@ -91,7 +91,7 @@ export default function Home() {
                 transition={{
                   repeat: Infinity,
                   duration: 2,
-                  ease: "easeInOut",
+                  ease: [0.42, 0, 0.58, 1],
                 }}
                 className="w-[180px] mx-auto"
               >
@@ -123,7 +123,7 @@ export default function Home() {
                 transition={{
                   repeat: Infinity,
                   duration: 2.4,
-                  ease: "easeInOut",
+                  ease: [0.42, 0, 0.58, 1],
                 }}
                 className="w-[180px] mx-auto"
               >

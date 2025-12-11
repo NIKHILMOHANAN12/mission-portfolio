@@ -199,7 +199,7 @@ export default function App({ Component, pageProps }: AppProps) {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              transition={{ duration: 0.3, ease: "easeInOut" }}
+              transition={{ duration: 0.3, ease: [0.42, 0, 0.58, 1] }}
             >
               <Component {...pageProps} />
             </motion.div>
